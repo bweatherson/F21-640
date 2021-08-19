@@ -10,10 +10,10 @@ output:
   html_document:
     df_print: paged
 geometry: margin=1.5in
-mainfont: SF Pro Rounded
-mainfontoptions: BoldFont = SF Pro Rounded Semibold
+mainfont: SF Pro Text Light
+mainfontoptions: BoldFont = SF Pro Text Medium
 mathfont: Fira Math
-header-includes: \linespread{1.05}
+header-includes: \linespread{1.18}
 ---
 
 ```{r setup, include=FALSE, cache=F, message=F, warning=F, results="hide"}
@@ -33,11 +33,11 @@ mon <- as.Date("2021-08-31")
 
 advdate <- function(obj, adv) {
  tmon <- obj + 7*(adv-1)
- tfri <- obj + 2 + 7*(adv-1) # This is setup for Tuesday-Thursday
+ tfri <- obj + 4 + 7*(adv-1) # This is setup for Monday-Friday
  tmon <- format(tmon, format="%m/%d")
  tfri <- format(tfri, format="%m/%d")
  zadv <- sprintf("%02d", adv)
- tmp <- paste("Week ",zadv,sep='',", ", tmon," - ",tfri)
+ tmp <- paste("Week ",zadv,sep='',", ", tmon)
  return(tmp)
 }
 
@@ -66,6 +66,7 @@ There is one required book for the course.
 It's also highly recommended that you get
 
 - _Ethics and the Limits of Philosophy_ by Bernard Williams. (This will be referred to as ELP in what follows.)
+- _Thick Evaluations_ by Simon Kirchin - this is freely available at <https://global.oup.com/academic/product/thick-evaluation-9780198803430>. (Look for 'open access' in top right.)
 
 There are some assigned readings from it, but I'll try to make them available to anyone who doesn't have a copy. But if you're working in ethics, it's probably one of the books you should have on your shelf anyway.
 
@@ -73,34 +74,20 @@ The other readings will all be available through the university library, and wil
 
 # Course Requirements
 
-1. Participate in the classes, by both attending virtual classes and (more importantly) participating in the discussion boards. You'll be expected to leave at least one comment about the week's readings each week - either asking a question, answering someone else's question, raising an objection, or noting an application. These don't have to be long - 50 words could be enough to make a point - but you are expected to participate each week (starting in week two). This will be **20%** of the final grade.
-2. Write one short paper (about 8 pages, or about 2500 words) on a topic that we cover in weeks 1-8 of the course. You have to submit a draft and a revision. The draft of this paper will be due on **October 30**, and the final on **November 20**. This will be **30%** of the final grade.
-3. Write one short paper (about 8 pages, or about 2500 words) on _either_ one of the topics from weeks 9-12 of the course, or on one of the applications discussed in chapters 16 and 17 of HMS. The draft of this paper will be due **December 1**. You will also do a short presentation (8 minutes or so) on this paper in one of the class slots between Thanksgiving and the end of term, and you should write up the paper in light of how that goes, and the feedback you get on it and the draft. The final paper is due on the day of the exam as set by the registrar - https://ro.umich.edu/calendars/final-exams/2020-fall - which I believe is **December 15**. The presentation and the paper between them will be **50%** of the final grade.
+1. Participate in the classes each week, having done the reading.
+2. Write four 'weeklies' at some point during the term.  A weekly should be a 2-3 page paper making one good point (either a criticism, or an application to some other debate) about the reading for that week. These do not need to include summaries of the text; assume the reader knows what you're talking about.
+3. In every week that you don't write a weekly, leave (at least) one question about (at least) one of the papers from the reading on the Canvas discussion boards.
+4. When possible, answer some of the questions on the boards, and contribute to discussions there.
+5. Write one short paper (about 10-12 pages, or about 3000 words) on one of the topics we discuss in the course.
 
-Both of the papers may be co-written with one other student in the class. But you may not co-author both papers with the same other student.
+The weeklies, and the short paper, may be co-authored. (I don't know what it would be to co-author a question, though you should give credit to someone if the question came out of discussions with them.)
 
-# Canvas Discussions
-
-The papers and presentations probably don't need much explanation - you've all done papers before and probably presentations. The presentations will be over Zoom/BlueJeans, so that will be different, but otherwise it will be the same. But I wanted to say something about the discussion boards.
-
-I'm very nervous that discussions won't work as well in classes this year as they have in in-person classes. So I want to encourage more use of Canvas discussion boards as a way to get discussion going. And to that end, I've made it part of the grade that you say something each week about the readings.
-
-You don't have to do anything in week one, but after that, you have to contribute to the discussion boards at least once each week. Contributing more than once is fine too - this is a floor not a ceiling - but I expect everyone to do something. Here are some guidelines for what counts as good (and less good) contributions.
-
-- Answering questions that other people ask is great; you don't have to start any discussion.
-- Asking questions is also great; you don't have to have a worked out position.
-- But the questions have to be detailed; you can't just say "I don't understand this, what does it mean?".
-- That said, interpretation is hard, and sometimes you'll want to ask an interpretative question. You just have to put some effort into it. So it's fine, for example, to have a contribution like "This passage sounds like it might mean X, or it might mean Y, and I can't tell which it is - does anyone have reasons to favor one reading or the other?", or "There's this phrase that sounds like it means X early in the piece, and sounds like it means Y later in the piece - has it really changed, or is there a consistent interpretation?".
-- In general saying that something's confusing isn't enough - saying why it is confusing is.
-- But maybe you want to start a discussion simply by saying something is confusing, and then contributing further to that discussion, or a different discussion, with a more substantive comment; that's fine too.
-- Linking the material to stuff in other classes, or other disciplines is great. That can involve bringing up criticisms grounded in work from elsewhere, or bringing up ways in which the work we're doing enlightens or undermines what you're learning about elsewhere. This is meant to be an interdisciplinary course, so all of those kinds of contributions are encouraged.
-- And, of course, this is a philosophy course, so comments of the form "Author says X, but X is wrong because ..." are always appreciated.
 
 # Summary of Grading System
 
 1. Participation in discussion boards and online classes - 20%
-2. First paper - 30%
-3. Second paper (including presentation) - 50%
+2. Weeklies - 4 by 10% = 40%
+3. Short paper - 40%
 
 # Plagiarism
 
@@ -118,6 +105,8 @@ If you have a disability, and may require some type of instructional and/or exam
 
 For more information on disability services at the University of Michigan, go to <http://ssd.umich.edu>.
 
+\newpage
+
 # Class Schedule
 
 Students must read the following before Monday's class session.  Important: class readings are subject to change, contingent on  circumstances and the progress we make as a class.  Students are encouraged to attend lectures and check the course website for updates. The links to readings will often be to things behind paywalls, but they are (I believe) all things you have access to through the UM library. You might have to be logged in to UM to get them though.
@@ -125,6 +114,9 @@ Students must read the following before Monday's class session.  Important: clas
 For each week, we'll go through the readings in the order they are here. That doesn't mean they are in order of importance; a couple of times there is a reading I want to focus on, but we need to briefly discuss something else to set it up. So each week I've starred the one that is really most crucial, though it might not be stuff we start with. Also, we'll open each week with an open floor for any questions/comments/etc about anything on the list. After that I'll work through things in the order they appear here, with the intent of going in the order shown.
 
 It might not be obvious, but many of the paper titles below contain links to places the paper is accessible. (In some cases, that includes places where I have made them accessible, mostly legally.)
+
+Note that because we really aren't expecting everyone to do the recommended reading, if you want to make a point about something in the recommended reading, you might need to provide a bit of background to any comment. (This isn't important for the discussion boards, but it is important in class.) But you should assume everyone is familiar with the required readings, especially the starred ones.
+
 
 ## `r advdate(mon, 1)`: The Fact-Value Distinction
 
@@ -139,87 +131,100 @@ _Recommended_
 
 - William Frankena, [The Naturalistic Fallacy](https://www.jstor.org/stable/2250706?seq=1#metadata_info_tab_contents).
 - Pekka Väyrynen, [Thick Ethical Concepts](https://plato.stanford.edu/entries/thick-ethical-concepts/) in the Stanford Encyclopaedia, especially §2.1.
+- Simon Kirchin, _Thick Evaluation_, chapter 1, especially pages 11-15.
 
-## `r advdate(mon, 2)`: Problems for the Distinction
+## `r advdate(mon, 2)`: Labor Day - No Class
+
+## `r advdate(mon, 3)`: Problems for the Distinction
 
 - Arthur Prior, [The Automomy of Ethics](https://www.tandfonline.com/doi/abs/10.1080/00048406085200221).
 - *Philippa Foot, [Moral Arguments](https://www.jstor.org/stable/2251201).
-- ELP, Chapter 7
+- ELP, Chapter 7.
 
 _Recommended_
 
+- Iris Murdoch, [Vision and Choice in Morality](https://www.jstor.org/stable/4106662?seq=19#metadata_info_tab_contents).
+- Greg Restall and Gillian Russell, [Barriers to Implication](https://consequently.org/papers/barriers.pdf).
 
+## `r advdate(mon, 4)`: Williams on Thick Concepts
 
-- HMS, Chapter 3.
-- Robert E. Lucas, "[Unemployment policy](https://www.jstor.org/stable/1816720)", American Economic Review, 68 (1978): 353–357.
-- Paul Samuelson, "[An Exact Consumption-Loan Model of Interest with or without the Social Contrivance of Money](https://www.jstor.org/stable/1826989)", Journal of Political Economy 66 (1958): 467-482.
+- ELP, Chapters 8-10 (especially 8).
 
-We'll be covering 3.1 (and Lucas) on Tuesday, and 3.2 (and Samuelson) on Thursday.
+_Recommended_
 
-##  `r advdate(mon, 3)`: Ethical Limits to Markets
+- Simon Kirchin, _Thick Evaluation_, chapter 8.
+- LRN, §§10.2-3.
 
-- HMS, Chapter 6
-- Alvin E. Roth "[Repugnance as a Constraint on Markets](https://www.jstor.org/stable/30033734)" Journal of Economic Perspectives 21 (2007): 37–58.
+## `r advdate(mon, 5)`: Shapelessness
 
-##  `r advdate(mon, 4)`: Utilitarianism and Consequentialism
+- John McDowell, [Non-Cognitivism and Rule Following](http://brian.weatherson.org/640-F21/McDowell.pdf).
 
-- HMS, Chapter 7
-- Amartya Sen, "[Utilitarianism and Welfarism](https://www.jstor.org/stable/2025934)", Journal of Philosophy 76 (1979): 463-489.
-- John Harsanyi, "[Cardinal Welfare, Individualistic Ethics, and Interpersonal Comparisons of Utility](https://www.jstor.org/stable/1827128)", Journal of Political Economy 63 (1955): 309-21.
+_Recommended_
 
-\newpage
+- Simon Blackburn, [Reply: Rule Following and Moral Realism](http://brian.weatherson.org/640-F21/Blackburn.pdf).
+- Debbie Roberts, [Shapelessness and the Thick](https://www.jstor.org/stable/10.1086/658898).
+- Simon Kirchin, _Thick Evaluation_, chapter 5.
+- LRN, Chapter 8.
 
-##  `r advdate(mon, 5)`: Welfare
+## `r advdate(mon, 6)`: Semantic Views
 
-- HMS, Chapter 8
-- Simon Keller, "[Welfare as Success](https://www.jstor.org/stable/40660441)", Noûs 43 (2009): 656-683.
-- Daniel Haybron and Valerie Tiberius, "[Well-Being Policy: What Standard of Well-Being?](https://www.cambridge.org/core/journals/journal-of-the-american-philosophical-association/article/wellbeing-policy-what-standard-of-wellbeing/)", Journal of the American Philosophical Association, 1 (2015): 712-733.
+- *Daniel Elstein and Thomas Hurka, [From Thick to Thin: Two Moral Reduction Plans](https://www.jstor.org/stable/27822063).
+- LRN, Chapter 3.
 
-##  `r advdate(mon, 6)`: Welfare Economics
+_Recommended_
 
-- HMS, Chapter 9
-- John Broome, "[Should Social Preferences Be Consistent?](https://www.cambridge.org/core/journals/economics-and-philosophy/article/should-social-preferences-be-consistent/72A2F4E7809C24E59318CAE2C6E939A2)" Economics and Philosophy 5 (1989): 7–18. 
-- Sven Ove Hansson, "[Philosophical Problems in Cost-Benefit Analysis](https://www.cambridge.org/core/journals/economics-and-philosophy/article/philosophical-problems-in-costbenefit-analysis/28D62185DC34665D3196BCACC8A16646)", Economics and Philosophy 23 (2007): 163-183.
-
-##  `r advdate(mon, 7)`: Egalitarianism
-
-- HMS, Chapter 11
-- Elizabeth Anderson, "[What is the Point of Equality?](https://www.jstor.org/stable/10.1086/233897)" Ethics 109 (1999): 287-337.
-
-##  `r advdate(mon, 8)`: Social Choice Theory
-
-- HMS, Chapter 14
-- Allan Gibbard, "[Social Choice and the Arrow Conditions](https://www.cambridge.org/core/journals/economics-and-philosophy/article/social-choice-and-the-arrow-conditions/)" Economics and Philosophy 30 (2014): 269-284. (Note that this paper was originally circulated in 1969, and was very influential.)
-- Amartya Sen, "[The Impossibility of a Paretian Liberal](https://www.jstor.org/stable/1829633)", Journal of Political Economy 78 (1970): 152-157.
+- LRN, Chapter 4.
+- Brent Kyle, [How are Thick Terms Evaluative?](http://hdl.handle.net/2027/spo.3521354.0013.001).
+- Michael Smith, [On the Nature and Significance of the Distinction Between Thick and Thin Ethical Concepts](http://www.princeton.edu/~msmith/mypapers/Thick%20and%20Thin.pdf).
+- Simon Kirchin, _Thick Evaluation_, §§2.4-2.6.
 
 \newpage
 
-## `r advdate(mon, 9)`: Explanation
+## `r advdate(mon, 7)`: Pragmatic Views
 
-- James Woodward, "[Scientific Explanation](https://plato.stanford.edu/entries/scientific-explanation/)", Stanford Encyclopedia of Philosophy.
-- Michael Strevens, "[How Idealizations Provide Understanding](http://www.strevens.org/research/expln/Verilux.pdf)", in Explaining Understanding: New Essays in Epistemology and the Philosophy of Science, edited by S. R. Grimm, C. Baumberger, and S. Ammon (eds.), Routledge, New York, 2016.
-- Daniel Nolan, "[Why Historians (and Everyone Else) Should Care About Counterfactuals](https://www.jstor.org/stable/41932671)", Philosophical Studies 163 (2013): 317-335.
-- Kate Vredenburgh, "[A unificationist defence of revealed preferences](https://www.cambridge.org/core/journals/economics-and-philosophy/article/unificationist-defence-of-revealed-preferences/8C3A9B21383347C01EE093CB0B3D8C9C)", Economics and Philosophy 36 (2020): 149-169.
+- LRN, Chapter 5.
 
-##  `r advdate(mon, 10)`: Models in (Social) Science
+_Recommended_
 
-- Robert Sugden, "[Credible worlds: the status of theoretical models in economics](https://doi.org/10.1080/135017800362220)", Journal of Economic Methodology 7 (2000):1-31.
-- Mary S. Morgan and Tarja Knuuttila, "[Models and Modelling in Economics](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1499975)", in Handbook of the Philosophy of Economics, U. Mäki (ed.), 2008.
-- Arnon Levy, "[Modeling without models](https://doi.org/10.1007/s11098-014-0333-9)", Philosophical Studies 172 (2015), 781–798.
+- Simon Kirchin, _Thick Evaluation_, Chapter 7.
+- Debbie Roberts, [Review of The Lewd, the Rude and the Nasty: A Study of Thick concepts
+in Ethics by Pekka Vayrynen](https://www.journals.uchicago.edu/doi/10.1086/679534).
+- Bianca Cepollaro and Isidora Stojanovic, [Hybrid Evaluatives: In Defense of a Presuppositional Account](https://brill.com/view/journals/gps/93/3/article-p458_7.xml).
 
+## `r advdate(mon, 8)`: Modesty in Ethics
 
-##  `r advdate(mon, 11)`: The Explanation Paradox
+- *Julia Driver, [The Virtues of Ignorance](https://www.jstor.org/stable/2027146).
+- G. F. Schueler, [Why Modesty Is a Virtue](https://www.jstor.org/stable/2382326).
 
-- Julian Reiss, "[The Explanation Paradox](https://www.tandfonline.com/doi/abs/10.1080/1350178X.2012.661069)", Journal of Economic Methodology 19 (2012): 43-62.
-- Robert Sugden, "[How Fictional Accounts Can Explain](http://doi.org/10.1080/1350178X.2013.828872)", Journal of Economic Methodology 20 (2013): 237-243.
-- Menno Rol, "[Reply to Julian Reiss](http://doi.org/10.1080/1350178X.2013.828870)", Journal of Economic Methodology 20 (2013): 244-249.
-- Daniel M. Hausman, "[Paradox Postponed](http://doi.org/10.1080/1350178X.2013.828868)", Journal of Economic Methodology 20 (2013): 250-254.
-- Till Grüne-Yanoff, "[Genuineness resolved: a reply to Reiss' purported paradox](http://doi.org/10.1080/1350178X.2013.828866)", Journal of Economic Methodology 20 (2013): 255-261.
-- Anna Alexandrova & Robert Northcott, "[It's just a feeling: why economic models do not explain](http://doi.org/10.1080/1350178X.2013.828873)", Journal of Economic Methodology 20 (2013): 262-267..
-- Uskali Mäki, "[On a paradox of truth, or how not to obscure the issue of whether explanatory models can be true](http://doi.org/10.1080/1350178X.2013.828869)", Journal of Economic Methodology 20 (2013): 268-279.
-- Julian Reiss, "[The explanation paradox redux](http://doi.org/10.1080/1350178X.2013.828874)", Journal of Economic Methodology 20 (2013): 280-292.
+_Recommended_
 
-##  `r advdate(mon, 12)`: Better and Worse Models and Explanations
+- ELP, Chapter 1.
+- Julia Driver, [Modesty and Ignorance](https://www.jstor.org/stable/10.1086/233947).
+- G. F. Schueler, [Why Is Modesty a Virtue?](https://doi.org/10.1086/233948).
+- Nicolas Bommarito, [Modesty and Humility](https://plato.stanford.edu/entries/modesty-humility/).
 
-- Jaakko Kuorikoski, Aki Lehtinen & Caterina Marchionni, "[Economic Modelling as Robustness Analysis](10.1093/bjps/axp049)", British Journal for the Philosophy of Science 61 (2010):541-567.
-- Anna Alexandrova & Robert Northcott, "[Progress in Economics: Lessons from the Spectrum Auctions](https://philpapers.org/archive/ALEPIE.pdf)", in in Handbook of the Philosophy of Economics, U. Mäki (ed.), 2008.
+## `r advdate(mon, 9)`: Modesty in Epistemology
+
+- Ian Church, [The Doxastic Account of Intellectual Humility](http://logos-and-episteme.acadiasi.ro/the-doxastic-account-of-intellectual-humility-pages-413-433/).
+- Alessandra Tanesini, [Intellectual Humility as Attitude](https://onlinelibrary.wiley.com/doi/abs/10.1111/phpr.12326).
+
+_Recommended_
+
+- Duncan Pritchard, [Intellectual humility and the epistemology of disagreement](https://link-springer-com.proxy.lib.umich.edu/article/10.1007%2Fs11229-018-02024-5).
+- Michael Lynch, [Arrogance, Truth and Public Discourse](https://www.cambridge.org/core/journals/episteme/article/abs/arrogance-truth-and-public-discourse/EB7618E77489F730D5020C3B88119285).
+- Alexandra Plakias, [Some Probably-Not-Very-Good Thoughts on Underconfidence](https://link.springer.com/article/10.1007/s10677-020-10093-0).
+
+NB: There is a huge and growing literature on this, and I'd be particularly happy to take recommendations for more readings on this particular question.
+
+\newpage
+
+## `r advdate(mon, 10)`: Hypocrisy
+
+- *Danielle Dover, [The Walk and the Talk](https://doi.org/10.1215/00318108-7697850).
+- Kyle G. Fritz & Daniel Miller, [The Unique Badness of Hypocritical Blame](https://quod.lib.umich.edu/e/ergo/12405314.0006.019/--unique-badness-of-hypocritical-blame?rgn=main;view=fulltext).
+
+_Recommended_
+
+- Hannah Tierney, [Hypercrisy and standing to self-blame](https://doi.org/10.1093/analys/anaa074).
+- Kasper Lippert-Rasmussen, [Why the moral equality account of the hypocrite’s lack of standing to blame fails](https://doi.org/10.1093/analys/anaa009).
+
