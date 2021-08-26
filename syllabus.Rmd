@@ -28,7 +28,7 @@ knitr::opts_chunk$set(warning=F, message=F)
 
 ```{r dates_bib, include=FALSE}
 knitr::opts_chunk$set(cache=FALSE, dev='pdf')
-mon <- as.Date("2021-08-31")
+mon <- as.Date("2021-08-30")
 # fri <- as.Date("2016-01-08")
 
 advdate <- function(obj, adv) {
@@ -191,7 +191,11 @@ _Recommended_
 in Ethics by Pekka Vayrynen](https://www.journals.uchicago.edu/doi/10.1086/679534).
 - Bianca Cepollaro and Isidora Stojanovic, [Hybrid Evaluatives: In Defense of a Presuppositional Account](https://brill.com/view/journals/gps/93/3/article-p458_7.xml).
 
-## `r advdate(mon, 8)`: Modesty in Ethics
+## `r advdate(mon, 8)`: Fall Study Break
+
+This falls at a nice time, since it breaks the course in two between the general study of thick concepts, and looking at specific important thick concepts.
+
+## `r advdate(mon, 9)`: Modesty in Ethics
 
 - *Julia Driver, [The Virtues of Ignorance](https://www.jstor.org/stable/2027146).
 - G. F. Schueler, [Why Modesty Is a Virtue](https://www.jstor.org/stable/2382326).
@@ -203,7 +207,7 @@ _Recommended_
 - G. F. Schueler, [Why Is Modesty a Virtue?](https://doi.org/10.1086/233948).
 - Nicolas Bommarito, [Modesty and Humility](https://plato.stanford.edu/entries/modesty-humility/).
 
-## `r advdate(mon, 9)`: Modesty in Epistemology
+## `r advdate(mon, 10)`: Modesty in Epistemology
 
 - Ian Church, [The Doxastic Account of Intellectual Humility](http://logos-and-episteme.acadiasi.ro/the-doxastic-account-of-intellectual-humility-pages-413-433/).
 - Alessandra Tanesini, [Intellectual Humility as Attitude](https://onlinelibrary.wiley.com/doi/abs/10.1111/phpr.12326).
@@ -218,7 +222,7 @@ NB: There is a huge and growing literature on this, and I'd be particularly happ
 
 \newpage
 
-## `r advdate(mon, 10)`: Hypocrisy
+## `r advdate(mon, 11)`: Hypocrisy
 
 - *Danielle Dover, [The Walk and the Talk](https://doi.org/10.1215/00318108-7697850).
 - Kyle G. Fritz & Daniel Miller, [The Unique Badness of Hypocritical Blame](https://quod.lib.umich.edu/e/ergo/12405314.0006.019/--unique-badness-of-hypocritical-blame?rgn=main;view=fulltext).
@@ -228,3 +232,12 @@ _Recommended_
 - Hannah Tierney, [Hypercrisy and standing to self-blame](https://doi.org/10.1093/analys/anaa074).
 - Kasper Lippert-Rasmussen, [Why the moral equality account of the hypocrite’s lack of standing to blame fails](https://doi.org/10.1093/analys/anaa009).
 
+## `r advdate(mon, 12)`: Open
+## `r advdate(mon, 13)`: Open
+## `r advdate(mon, 14)`: Open
+
+We'll discuss which virtues/vices/thick concepts we want to focus on in these weeks in weeks 1 and 2, and I'll update this part of the syllabus with more readings.
+
+## `r advdate(mon, 15)`: Review
+
+We'll go over some themes from the course, and if anyone wants to do a presentation on their essay topic we can do some then. This is writing/grading time for most students, so we certainly won't do new material. But I think there will be value in having a chance to review what we've covered, and for anyone to discuss things that came up when they were doing more reading for the short papers.

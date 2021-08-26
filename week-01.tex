@@ -1,0 +1,1018 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \setmainfont[BoldFont = SF Pro Text Medium]{SF Pro Text Light}
+  \setmathfont[]{Fira Math}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={PHIL 640: Week One - Introduction},
+  pdfauthor={Brian Weatherson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1.5in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\linespread{1.18}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\title{PHIL 640: Week One - Introduction}
+\author{Brian Weatherson}
+\date{August 30, 2021}
+
+\begin{document}
+\maketitle
+
+\hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+Like many issues in philosophy, even saying what the debate about thick
+concepts or terms is about requires taking sides on a number of disputed
+philosophical questions. Rather than do that, I'll follow common
+practice and start by just pointing out various examples. I'll list
+terms here because it's easier to list them than to list concepts,
+though our interest here is if anything more on the concepts than the
+terms.
+
+So start by considering the words in these two lists.
+
+\begin{itemize}
+\tightlist
+\item
+  Honest, Fair, Brave, Friendly, Generous, Tactful
+\item
+  Wicked, Cowardly, Rude, Nasty, Selfish, Cruel
+\end{itemize}
+
+We will mostly recognise the first as terms of approval, even as
+distinctively moral kinds of approval, and the second as terms of
+disapproval. But that kind of boo/hooray doesn't exhaust what is
+typically communicated by the terms.
+
+It is perfectly consistent to say that something was good but not
+tactful. It may even be consistent to say that it was tactful but not
+good; let's come back to that. What matters for now is that saying
+something is tactful isn't just to express approval of it; it's to
+approve of it in a particular respect. And if the thing doesn't have
+that respect, then it isn't tactful.
+
+To take a very topical example, it would be very strange to describe the
+withdrawl of US troops from Afghanistan as tactful. If you disapprove of
+the withdrawl, then sure that's easy to explain; you don't like using
+positive terms to describe something you disapprove of. But even if you
+do approve of it, you might still think that while the withdrawl was
+good, it wasn't good in the way that tactful things are good. You might
+think that the US actions were not tactful, and this is for broadly
+speaking descriptive rather than evaluative reasons.
+
+The terms on these two lists are related to something like moral or
+ethical evaluation. But really for any kind of evaluation we can think
+of terms that seem to have these evaluative and descriptive aspects. So
+think of all of these broadly aesthetic terms.
+
+\begin{itemize}
+\tightlist
+\item
+  Beautiful, Sublime, Stylish, Elegant, Balanced, Delicate
+\item
+  Garish, Messy, Crude, Ugly
+\end{itemize}
+
+The first group seem more or less positive, the second more or less
+negative. But they don't just have these evaluative senses; they seem to
+have descriptive aspects to them. One can like, and approve of, a piece
+of music without thinking it beautiful. (How much of the Velvet
+Underground's first album is beautiful? How much does that matter for
+how good the album is? Can something have a beautiful taste or smell? I
+don't think so; a paper plane might look beautiful, but can it taste
+beautiful?) And the other terms are even more contentful
+descriptively.\footnote{If this was an aesthetics seminar I'd spend
+  hours at this point asking if there are any terms in aesthetics that
+  are as `thin' as `good' and `right.' But let's leave that for another
+  day.}
+
+We can do the same thing for evaluations to do with rationality, whether
+it is epistemic or practical.
+
+\begin{itemize}
+\tightlist
+\item
+  Shrewd, Open-Minded, Humble, Insightful, Perceptive
+\item
+  Gullible, Stubborn, Shallow, Lazy
+\end{itemize}
+
+We're going to cover epistemology a lot more in this course; let's leave
+it there for now.
+
+So far I've been dividing up the terms into the good 'uns and the wrong
+'uns, but one thing that is super important is that there are plenty of
+terms that are nowhere near this easy to classify. The main book for
+this course, Pekka Vayrynen's \emph{The Lewd, The Rude and the Nasty}
+(Väyrynen 2013), makes these terms the centerpiece of the main argument.
+So let's list a few contentious ones already.
+
+\begin{itemize}
+\tightlist
+\item
+  Lewd, Chaste, Blasphemous, Sinful
+\end{itemize}
+
+The idea that Vayrynen wants to build up is that these terms encode a
+moral system that we might well want to reject. Oddly, although Vayrynen
+wants to disagree with Bernard Williams (1985) about approximately
+everything to do with these thick terms, the possibility of such terms
+is also central to Williams's story. That's because Williams thinks that
+these terms are most at home in particular moral systems that need not
+be universally shared. One of his aims on getting us to focus on thick
+terms is to make moral relativism more appealing. Different cultures use
+different thick terms, but they are still using moral theories when they
+do so. But these are different theories, so of course the terms from
+other systems will strike us as defective in some way or other.
+
+There are three more contentious terms that I want to spend a little
+time on before we move on.
+
+One is really a class of terms: slurs. These seem to also have
+descriptive and evaluative components. If you call someone a bogan or a
+chav you're probably insulting them.\footnote{If you don't know either
+  of these terms,
+  \href{https://www.urbandictionary.com/define.php?term=bogan}{Urban
+  Dictionary} might help - though probably the `definitions' there will
+  be just as unintelligible as the terms. Anyway, these are both broadly
+  social slurs aimed at a particular kind of less wealthy person.} But
+you're also making a descriptive claim, one that could be wrong. Donald
+Trump, for instance, is neither a bogan nor a chav, even if much of his
+sales pitch is targeted at people who might well fall into one or both
+of these categories. And this seems to be the general case with slurs;
+they have both descriptive and evaluative elements. But for most slurs,
+maybe including `bogan' and `chav,' the evaluative aspect is based in a
+bad moral theory. This is most obvious for the most obvious racial
+slurs, but it's kind of true across the board. This isn't a seminar on
+slurs, but slurs will be often in the background.
+
+The second pair, which we will spend a lot of time on, is `humble' and
+`modest.' I'm not really going to separate these two, though maybe if
+it's interesting enough we can. What I will spend a lot of time on is
+whether these are positive terms at all, and if so how they are. There's
+that old line, sometimes attributed to Winston Churchill, about a modest
+man with much to be modest about, that gets at why you might worry about
+these being positive.\footnote{Though since the target of the quip is
+  usually said to be the person who was in fact the greatest ever
+  British PM, maybe this example doesn't show very much.} And we'll see
+in the philosophical theories of them, it's very hard to come up with
+stories about humility and modesty that make them unambiguously
+positive.
+
+The third kind of case I want to think about, and really just to flag,
+is that with a strange enough moral theory, almost any term can be
+positive. Think about `selfish' as used by a devotee of Ayn Rand. This
+is going to be more grist for the view that Vayrynen pushes, that these
+terms are not actually evaluative at all, just descriptive. We'll spend
+enough time on that in later weeks; I'm just flagging it now.
+
+As well as the contentious terms, we should also think about the terms
+that are in a sense primarily descriptive, but which one could object to
+on evaluative grounds. Here are some examples, which will be relevant as
+we go along.
+
+\begin{itemize}
+\tightlist
+\item
+  Murderer, Thief, Liar
+\item
+  Footballer, Artist, Philosopher
+\item
+  Joke, Artwork, Song
+\end{itemize}
+
+The first three rely not just on something happening, e.g., some object
+being acquired, but on an evaluation of that happening, e.g., that the
+acquisition was of something a different person had a claim to. The
+second three rely on at least a minimal standard of quality being met.
+Whether a teenager is a footballer depends not just on whether they kick
+a ball around, but on how well they do it. There are bad footballers,
+but if you're bad enough, you're no longer a footballer. And the same
+goes for the last category. A bad enough joke isn't actually a joke.
+
+If you think of thick/thin as a spectrum, and I think it's more or less
+a consensus now that you should, then these terms are at the opposite
+end from terms like `wicked,' `intelligent,' `beautiful,' and other
+terms that don't tell you very much about the descriptive attributes of
+the thing under discussion. But they still have many things in common
+with other thick terms, and it's worth remembering their existence when
+we consider theories of thick terms.
+
+One last introductory point that will be very relevant for the second
+half of the course. Most of these terms can be applied either to token
+actions/thoughts/intentions, or to agents as temporally extended beings.
+But, at least intuitively, they seem to apply in the first instance to
+agents, not to actions. That's to say, at least intuitively the
+following theories seem like they are on the right track to me.
+
+\begin{itemize}
+\tightlist
+\item
+  For someone to be a good person just is for their actions (or perhaps
+  intentions) to be good.
+\item
+  For something to be a generous action (or intention) just is for it to
+  be the kind of thing a generous person would do.
+\end{itemize}
+
+Focussing on these terms, or concepts, draws our moral attention to
+people, in all their messy complexity, and away from individual actions
+or thoughts. And maybe that's a very good thing. Whether or not it is,
+it's quite a momentous thing, and it's something we should pay attention
+do before jumping ahead.
+
+\hypertarget{puzzles-about-definition}{%
+\subsection{Puzzles about Definition}\label{puzzles-about-definition}}
+
+So far I've I ostended over 30 terms I've called thick terms, as well as
+noting that the class includes slurs, so you can probably add that many
+more again to the class off the top of your head.\footnote{How many more
+  might depend on your cultural upbringing; the variety of slurs in
+  circulation seems to vary a lot from place to place.} It would be good
+at this point to have a neat definition of our subject matter, to say
+what it is for something to be a thick term.
+
+Unfortunately, that isn't going to happen. Any proposed definition will
+involve way too much theory. People who disagree with the theory can
+more-or-less agree on the existence and rough extension of the
+distinction we're setting out. So the definition of the distinction
+can't be in these theoretically contentious terms.\footnote{Is this an
+  open question argument? Maybe! Foreshadowing\ldots{}}
+
+For instance, you might borrow the venerable fact/value distinction and
+say that a thick term is one that has both factual and evaluative
+components. To say that Gen is a thief is to say that he brings things
+into his proximity, factual, and that he shouldn't do this, evaluative.
+But this is wrong for at least four separate reasons.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  If you're a moral realist, you'll think it is a fact that it is wrong
+  for Gen to bring these things that belong to other people into his
+  proximity.
+\item
+  This way of putting it assumes that we understand what it is for terms
+  to be evaluative, and indeed that terms are evaluative, and both of
+  these are contentious. (Note that Kirchin (2018) thinks that a big
+  part of what's wrong with the literature is that we've misunderstood
+  how terms are evaluative.)
+\item
+  This way of putting it assumes something like Separability; the idea
+  that thick terms have two different parts, one evaluative and one
+  `factual.' And that's not just contentious; it's mostly taken to be
+  false.
+\item
+  And the whole setup assumes a fact/value distinction - and the reason
+  these terms were first made salient in philosophy was to undermine the
+  very existence of that distinction. Much more on this to come.
+\end{enumerate}
+
+Williams (1985) goes a different way. He says that the distinctive thing
+about these terms is that they are both `world-guided' and
+`action-guiding.' I take it he's picking up here on something like the
+idea of mental states having a `direction of fit' from Anscombe
+(1957).\footnote{See Humberstone (1992) for much more background on
+  this.}. We want both our beliefs and our desires to have true
+contents. But what differs between beliefs and desires, at least in
+paradigm cases, is how we react if they don't. If our beliefs have false
+contents, we change the beliefs. If our desires have false contents, we
+change the world. The world guides our beliefs, and our desires guide
+our actions. Or at least that's the simple case; our attention will be
+on the cases that are less simple. To hold that Gen is a thief, on this
+picture, is to be in a state that should be guided by the world - it
+should be a reaction to Gen bringing certain kinds of things into his
+proximity - and should guide action - e.g., by punishing him. (Or, I
+guess more likely, using better locks when he's around.)
+
+But this won't work either, again for several reasons.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Some moral realists, most notably I guess Murdoch (1970), insist that
+  moral attitudes are world-guided.
+\item
+  Some philosophers, including me, deny that moral attitudes are
+  (properly) action-guiding.
+\end{enumerate}
+
+I think we're best off just sticking with the lists.
+
+\hypertarget{descriptive-equivalence}{%
+\subsection{Descriptive Equivalence}\label{descriptive-equivalence}}
+
+I want to flag a question for now because we're going to come back to it
+a lot in what follows. Let's say you've got one of these
+sorta-descriptive/sorta-evaluative terms. And for some reason you want
+to factor out the descriptive part. Maybe you don't actually share the
+views that make the evaluative part make sense. Or maybe you want to
+explain the term to someone who doesn't. To make things concrete, maybe
+you're trying to explain what a thief is to someone who really doesn't
+get property norms, and can't figure out how they work.
+
+It's actually kind of hard. Probably the best way to do it would be to
+try again to explain the moral theory of property - not as something
+they necessarily should endorse but as something they should understand
+- and then say that to be a thief is to violate this theory in certain
+ways. And maybe that could work, though I think it's going to be tough.
+
+This wasn't much of an argument - we'll see more thorough arguments in
+weeks to come - but it suggests the following conclusion.
+
+\begin{itemize}
+\tightlist
+\item
+  There is no term that has the same descriptive meaning as `thief,' but
+  without the moral connotations.
+\end{itemize}
+
+In the language of thick concepts, there is no \textbf{descriptive
+equivalent} to `thief.' The parallel claim in the slurs literature would
+be that a particular slur, like `bogan,' has no neutral counterparts.
+And I suspect both of them are right.
+
+What would follow if this claim is right? We'll spend a lot of time on
+this too. But one thing that you might think follows is that it's bad
+news for views that say thick terms can be factorised into a descriptive
+and an evaluative part. And that in turn would be bad news for theories
+that require the possibility of such factorisations. It's time to turn
+to such theories.
+
+\hypertarget{self-indulgent-interlude}{%
+\subsection{Self-Indulgent Interlude}\label{self-indulgent-interlude}}
+
+The reason I'm interested in this stuff is that I'm in print defending
+what sure looks like one of those theories. Now I want to stress that
+theories like mine are \textbf{not} why people have been typically
+interested in thick concepts. But they are relevant to me, and it's my
+seminar, so let's start.
+
+One of the core theses of \emph{Normative Externalism} (Weatherson 2019)
+was that it is not good to be motivated by doing good as such. So I want
+to contrast these two cases.
+
+\begin{itemize}
+\tightlist
+\item
+  There is a drowning child in the pond. Jill does not want the child to
+  drown, so she jumps in and rescues the child.
+\item
+  There is a drowning child in the pond. Jack doesn't care about whether
+  or not children drown, at least under that description. But he does
+  care a lot about doing the right thing, whatever it turns out to be,
+  and he believes (correctly) that right now doing the right thing would
+  be jumping in to rescue the child. So he jumps in and rescues the
+  child.
+\end{itemize}
+
+I'm committed to the view that what Jill did is much better, morally
+speaking, than what Jack did. Officially in the book the view is that
+being motivated by the desire to do the right thing, whatever it is, has
+no positive moral value. Actually I think something stronger than this -
+that it's a vice.\footnote{We maybe even have a word for it in English:
+  `self-righteousness.' But whether that's exactly the right word for
+  this character trait is less interesting to me than whether the trait
+  is a vice}
+
+There is a common argument for the kind of view I have: the Nazi
+argument. The Nazis were horrible in every respect, yet at least some of
+them were motivated by a desire to do the right thing - while of course
+having horrible beliefs about what was right. So the fact that the Nazis
+were trying to do the right thing - under that very description (or at
+least its German translation) - isn't a virtue of theirs. This argument
+is super sloppy, and I don't really feel like trying to tidy it up,
+because I don't think using Nazis in this kind of debate is helpful.
+There are messy historical questions about just what kind of motivations
+different Nazis actually had. And even if we sort those out, how to map
+Nazi attitudes onto regular categories from moral psychology is a hard
+and unpleasant question.\footnote{The evidence in Ohler (2016) that they
+  were taking all the drugs does not make this task any easier.}
+
+A better argument comes from thinking about terrorist groups, especially
+groups that have self-consciously moral aims. And within those,
+especially groups whose ends are ones that we might find basically
+congenial, however much we disagree with them about means. So in the
+book I spend a bit of time talking about Jacobins, mostly drawing on the
+discussion in Palmer (1941). But I suspect it would have been better to
+focus as well, or perhaps instead, on IRA terrorists, as discussed in
+Keefe (2019). I just don't think you should look at people murder single
+parents because of flimsy evidence that they were providing trifling
+help to the government, and say that ``Well, at least they thought they
+were doing the right thing.'' Instead, I think you should see their
+overarching desire to do the right thing as having removed a very useful
+guardrail that most of us have on our actions - that little voice
+Socrates talks about that warns us against doing something so abhorrent.
+
+So what I'd really like to say is this. A good action just is one that
+is driven by good intentions. And good intentions are intentions that
+are driven by desires to promote descriptively individuated states that
+are in fact good, while also desiring to avoid (or perhaps prevent)
+descriptively individuated states that are in fact bad. It's to be like
+Jill - to jump in because a child is drowning.
+
+Now if there was a clear descriptive/evaluative distinction, that would
+all be fine. I mean, it would still be controversial, but it would at
+least make sense. But what do we say about someone who\ldots{}
+
+\begin{itemize}
+\tightlist
+\item
+  did X because it was the only fair thing to do?
+\item
+  didn't do X because it would be stealing?
+\item
+  did X because it was the bravest thing to do?
+\item
+  didn't do X because it would be lazy to do it?
+\end{itemize}
+
+I have views about each of these questions. But I don't have anything
+remotely like a theory that produces these verdicts as theorems. So this
+is why I'm interested in the topic. But it's not the standard reason.
+That has to do with anti-realist ethical views.
+
+\hypertarget{non-cognitivism-and-expressivism}{%
+\subsection{Non-Cognitivism and
+Expressivism}\label{non-cognitivism-and-expressivism}}
+
+In mid-century England, the dominant meta-ethical view was a kind of
+anti-realism. This view had two components. Both of them are, I think,
+best understood comparatively.
+
+One component of the view concerns mental content. We have a rough idea
+of what it is to believe a descriptive proposition about the world, like
+that the cat is on the mat.\footnote{Actually, you probably don't want
+  to think too hard about what kind of attitude those folks thought was
+  involved in believing the cat is on the mat. But it's a world-directed
+  notion, in some sense of `world' and `directed'} To hold that murder
+is wrong is not, they think, anything like that. Maybe it's to
+disapprove of murder. Maybe it's to desire not to murder, or that anyone
+else murders. Maybe it's also a desire to punish in some ways those that
+do murder. What it isn't is a belief that this action type, murder, has
+some moral property, being wrong. And that's because there is no such
+property.
+
+Given this view about mental content, a view about linguistic content is
+just about forced. To say that murder is wrong is not to describe the
+world in any way. Again, don't think too hard about what makes something
+a description - just that it's what we do when we say that the cat is on
+the mat. We're not doing that when we say murder is wrong. What are we
+doing? Well, in the crudest version of the view, more or less the one
+defended by Ayer (1936), we're saying \emph{Boo murder!}. A moral
+philosophy talk, properly interpreted, sounds like the crowd at some
+underperforming football club.\footnote{Sorry I guess to fans of
+  Arsenal/Newcastle/Schalke or whoever is triggered by this analogy.}
+The view on mental content is \textbf{non-cognitivism}, the view that
+moral attitudes are not cognitive states. The view on linguistic content
+is \textbf{expressivism}, that the role of moral terms is to express
+these (non-cognitive) states.
+
+These are normally taken to be views in meta-ethics; they aren't moral
+theories, but views about what moral theory is. And towards the end of
+the 20th century, the focus of the debate around it turned on technical
+questions like how moral terms behaved in antecedents of conditionals.
+Since \emph{If Boo murder!, \ldots{}} isn't even grammatical, it's hard
+to explain what \emph{If murder is wrong,\ldots{}} means.
+
+But in the 1950s, that wasn't the concern. Rather, the concern was that
+this meta-ethical theory led to bad moral theory. Or, almost as bad,
+that it led to not actually doing moral theory. Since we shouldn't
+really spend too much time theorising about what we cheer or boo, we
+shouldn't have moral theory be a central part of philosophy. Actually
+put that bluntly that doesn't sound like a great argument. But as a
+matter of fact normative ethics had fallen in importance, and these
+kinds of anti-realist views, non-cognitivism and expressivism, had taken
+hold, and maybe there was a causal connection there.
+
+Now the first big entry of of thick concepts into the philosophical
+debate comes as a response to this kind of anti-realism. The term `thick
+concept' isn't used, but the idea is right there. And it's not attacking
+anything about the details of one or other account of what non-cognitive
+state a moral attitude is, or just how moral terms behave in
+antecedents. It's really a straight up attack on the very idea that
+there is a boundary between the moral and the descriptive, a boundary
+whose existence the non-cognitivist needs to presuppose. And this is
+what you see especially in the work of Philippa Foot (1958) and Iris
+Murdoch (1956). We'll spend much more time on these next week, so I'm
+just going to flag them here.
+
+But why did people have these kinds of anti-realist views in the first
+place? The simple answer is that it was a response to the arguments that
+G. E. Moore (1903) made, and we'll spend the rest of this week looking
+at those arguments.
+
+\hypertarget{self-indulgent-interlude-2-history-of-analytic}{%
+\subsection{Self-Indulgent Interlude 2: History of
+Analytic}\label{self-indulgent-interlude-2-history-of-analytic}}
+
+There is a standard story about the history of analytic philosophy. In
+this history, logic and philosophy of science play a particularly
+central role. A lot of the tools that are central to today's philosophy
+of language are developed over the story, but the lead characters don't
+care that much about natural language, so the relation between this work
+and philosophy of language is complicated. But logic and philosophy of
+science are central to the story.
+
+In the standard story, there are three big figures towering over the
+field: Frege, Russell, Wittgenstein. Note that two of these wrote in
+German, and one of them was in a math department not philosophy. Those
+features are not atypical. Most of the other important figures wrote in
+German, and several of them would have identified as mathematicians
+rather than philosophers. So think of the philosophical importance of
+figures like Hilbert, Gödel, Tarski, Schlick, Carnap, Popper and so on,
+with Cantor as an important influence if you reach further back.
+
+But while these figures are important, I think this leaves a huge amount
+out of the story. In particular, it leaves out value theory. In much of
+the 20th century, value theory had a split role in the university, as
+you see in the title of Liz Anderson's first book: \emph{Value in Ethics
+and Economics} (Anderson 1995). Very roughly speaking, the more
+quantitative part of value theory was done in economics, the more
+qualitative part in philosophy. That was never wholly true, and with the
+recent rise of formal ethics is less true than before, but it wasn't
+wholly false for many decades.
+
+In the 19th century though, especially in England and Scotland, there
+really wasn't a distinction here. The people we now think of as the most
+important figures in economic thought all had very thorough training in
+philosophy. And the best philosophers read, and often contributed to,
+economic thought.
+
+I think the history of analytic philosophy should include, and arguably
+start with, some of these philosopher-economists. The most important
+figures here are probably Jevons (to my mind the first in the tradition
+we call analytic philosophy), Edgeworth and (though he's a more
+complicated case) Marshall.
+
+Why am I including this here? Because the peak of this tradition came
+with two great philosopher-economists who interacted with Moore, namely
+Keynes and Ramsey. Keynes's doctoral work was a theory of probability
+that was designed to respond to some challenges Moore raised, and
+Ramsey's theory of probability - which is probably still the dominant
+version in philosophy today - is a response to some issues in Keynes's.
+There is this rich interaction between philosophy and economics that was
+lost after World War Two, but which we should understand if we want to
+know the history of our discipline.
+
+We also have this amazing document of what it was like to do philosophy
+at the time Moore was writing \emph{Principia Ethica}, Keynes's
+posthumously published memoir ``My Early Beliefs'' (Keynes 1938). I'm
+not sure everyone would call it a philosophy paper, but it's my favorite
+ever philosophy paper, at least to read. I learn a bit more about the
+time period every time I read it, so I don't want to leave you with the
+impression that there is only one thing to learn about it. But here's
+what I want to stress for today.
+
+In the middle of Keynes's paper there is this long list of questions
+about, as he puts it, mensuration. Some of them feel like how many
+angels on the head of a pin. But some of them are just what we spend
+time talking about today. Just to pull out one example, though
+completely not at random.
+
+\begin{quote}
+In valuing the consequences did one assess them at their actual value as
+it turned out eventually to be, or their probable value at the time? If
+at their probable value, much evidence as to possible consequences was
+it one's duty to collect before applying the calculus?
+\end{quote}
+
+Now what I want to stress is how unlike this is to everything else
+that's happening in philosophy at the time. Pick up any philosophy
+journal and you will find lots of articles about the nature of the
+Ideal, and very few about duties to collect evidence before
+action.\footnote{I think that, for example, Bosanquet's ``Hedonism Among
+  Idealists'' (Bosanquet 1903) is much more representative of the
+  period.} But a lot of what Moore discussed, along with his very
+devoted followers, seems continuous with what we do today.
+
+\hypertarget{the-open-question-argument}{%
+\subsection{The Open Question
+Argument}\label{the-open-question-argument}}
+
+Moore has been so influential on meta-ethics over the last 120 years
+that it is easy to place him using familiar language. That's because the
+language developed in no small part in response to his work.\footnote{I'm
+  drawing a lot on Hurka (2021), especially in the first few paragraphs.}
+
+Moore is a moral realist. He thinks that moral properties exist, that
+some things have them and that others don't. At least in \emph{Principia
+Ethica}, he has an extremely anti-relativist form of realism, though
+that gets at least a bit qualified in later works.
+
+He is, in the language that Vayrynen uses, a thin centralist. He thinks
+the key notions in ethics are things like goodness, rightness and what
+one ought, all things considered, do.
+
+He is a consequentialist. He thinks that what makes something the right
+action is that it produces the best consequences. In Rawls's
+terminology, he thinks that the good is prior to the right.
+
+And he is an agent-neutral consequentialist, again at least in
+\emph{Principia Ethica}. He thinks that what is absolutely good is prior
+to what is good for me or for you, if we can even make sense of those
+notions.
+
+But he is not in any recognisable sense a utilitarian. He is a value
+pluralist; he doesn't think that there is just one thing we should try
+to maximise. And that one thing is not purely mental. He thinks,
+anticipating some environmental ethics, that it would be better for the
+world to be beautiful rather than ugly, even if no one was around to
+appreciate it. And, famously, he believes in the principle of
+\textbf{organic unity}, or what we might call value holism. The value of
+a whole is in no sense the sum of the value of the parts.\footnote{This
+  is implicit in Jevons's work, but it's Moore who really makes it
+  central to philosophical discussions of value.} I don't know precisely
+how we want to use the term `utilitarian,' but I think it probably
+should be reserved for people who believe at least some of the things
+that Moore is denying here.
+
+And now we get to the most contentious term of all: Moore is a
+non-naturalist. Just what this means is not easy to say. It does not
+mean that he thinks goodness is some kind of supernatural property. The
+way Moore uses words, divine command theories are naturalist. This is
+one bit of terminology that has not caught on. The simplest thing to
+say, in modern lingo, is that Moore is an anti-reductionist.
+
+It's this anti-reductionism that is meant to be supported by the
+infamous \textbf{open question argument}. Here's how a modern
+presentation of the argument might go. We'll come back to how much Moore
+says anything quite like this. Consider any proposed reduction of
+goodness to some descriptive property D. According to the reduction,
+goodness is D. But we can sensibly say, ``That is D, but is it good?''
+Its goodness might remain an open question for us even after we concede
+it is D. So goodness is not D. And since D was arbitrary, it follows
+that goodness isn't anything else.
+
+As it stands, there is a simple response to this argument. Who is the
+`we' who can sensibly ask the open question? It can't be those who know
+that goodness is D - the question won't be open for them. Moore thinks
+there are no such people, but he can't take that as a premise; that
+would make the argument obviously circular. A natural hypothesis is that
+it is competent users of the language. But now we have the familiar
+point that competent speakers of the language need not be on top of all
+reductions. We have a successful reduction of water, it is
+H\textsubscript{2}O. But for someone who doesn't know this bit of
+chemistry, the question ``Does this water contain oxygen?'' might be an
+open question. So if you restrict things to people who know that
+goodness is D, the question is not open, and if you don't, the openness
+of the question doesn't prove anything.
+
+I think this is a pretty conclusive response to what I was calling the
+open question argument. But there are at least three reasons to think
+that at this point we've misinterpreted Moore. First, nothing that has
+been said so far distinguishes `good' from `horse.' In both the argument
+and reply, you could replace `good' with `horse' and everything else
+would go through smoothly. Yet whatever else Moore is doing, he is
+trying to show a way in which `good' is different from `horse.' Second,
+this makes the argument sound like it really is about meanings of words.
+And again, Moore is very clear that he doesn't care about meanings in
+the ordinary sense. Think, for example, about the parts where he is
+mocking someone who thinks that the fact that something falls in the
+extension of a particular English word is a reason to do it. He does
+talk about definitions, and we'll have to come back to that, but he
+isn't talking about word meanings. Third, there seem to be two arguments
+in §13, which looks like the key section, and neither of them seem to be
+the modern presentation of the argument - though both of them eventually
+get close to it.
+
+So what is Moore trying to do, if he's not providing an argument about
+the meaning of `good?' He is asking what the \textbf{metaphysical
+definition} of goodness is. This idea of there being metaphysical
+definitions somewhat dropped out of philosophy for a while - it really
+is the kind of metaphysics that the positivists wanted to be rid of -
+but you can see it in some contemporary philosophy. I think what Moore
+is up to here is continuous with the discussions of metaphysical
+semantics in \emph{Writing the Book of the World} (Sider 2011). Moore
+thinks that the language of the book will include a word much like
+`good,' but it won't include a word like `horse.' If you want to really
+say how things are, you shouldn't talk about horses; you should talk
+about horse parts and their arrangement. But you should talk about
+goodness.
+
+What then is the argument for that conclusion? It seems on the face of
+it Moore gives two arguments, one in §13(1), the other in §13(2). And
+neither I think is the standard open question argument. The argument in
+§13(1) goes like this.\footnote{And note that Moore's particular example
+  of D involves second-order desires, just like the theory in Lewis
+  (1989). It's really so much more contemporary sounding than so much
+  else that was going on at the time.} Let D be an arbitrary proposed
+definition of goodness; we'll show it fails.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  It makes sense to ask whether it is D that X is D. E.g., it makes
+  sense to ask whether it is desirable to desire that we desire to
+  desire beauty.
+\item
+  It does not make sense to ask whether it is good that X is good.
+\item
+  So goodness is not D.
+\end{enumerate}
+
+Or perhaps the argument is this - I really can't tell quite what's going
+on in premise 2.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  It makes sense to ask whether it is D that X is D. E.g., it makes
+  sense to ask whether it is desirable to desire that we desire to
+  desire beauty.
+\item
+  Anyone who understands the question of whether it is D that X is D
+  will understand that it is not the same question as whether it is good
+  that X is D.
+\item
+  So goodness is not D.
+\end{enumerate}
+
+The point is not we might be competent users of a term and not recognise
+correct metaphysical reductions. That's an obvious consequence of
+thinking about `horse' for a minute. Rather, it's that fully informed
+users of the terms will recognise the differences between these
+questions.
+
+Why believe premise 2 in either case? Here's where I think Moore gets
+closest to the standard presentation of the argument. What he really
+needs is that fully informed speakers of the language of the book of the
+world will see that there is a difference between \emph{It is D that X
+is D} and \emph{It is good that X is good} / \emph{It is good that X is
+D}. Now his opponents think they will not. Who's right? Well the claims
+sure seem different to us pretty-well-informed speakers, and maybe
+that's evidence that they seem different to fully informed speakers. I'm
+not sure. In any case, it's already a bit interesting that the argument
+is about these claims where D appears twice; I don't think the standard
+presentation does that.
+
+The discussion in §13(2) gets closer to the standard presentation. But
+it's very odd. I can't really tell who the opponent is supposed to be
+here, and I suspect that's about to become important. He says in the
+first sentence that the opponent is the person who says that `good' is
+meaningless. I think this is the view that `good' doesn't have a
+counterpart in the book of the world not because like `horse' it can be
+reduced, but because like `phlogiston' it wasn't needed. But I'm super
+not sure - that's the person he says he is targeting - but this doesn't
+make best sense of what follows.
+
+So what does follow. Well, let D1, D2, D3, etc be different proposed
+reductions of goodness that people might have tried back in the previous
+argument. Then we get the following argument.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  For each Di, it makes sense to ask whether Di is good.
+\item
+  Each of these questions has something in common.
+\item
+  If goodness had no meaning, these questions would not make sense, or
+  at least wouldn't have anything in common.
+\item
+  So goodness has a meaning.
+\end{enumerate}
+
+Then Moore puts the two parts together. By the second argument, goodness
+has to appear in the book of the world either directly, as part of the
+basic language, or indirectly, as something else that gets reduced to
+it. But by the first argument it can't appear indirectly. So it must be
+a fundamental feature of the world. And that's what the non-naturalist
+realist wants.
+
+Now one giant caveat needs to be put on the board here. In both §13(1)
+and §13(2), the discussion around the argument gets very close to what
+I'm calling the standard presentation of the open question argument. But
+ultimately I don't think that's the argument. I think the argument is
+about the non-identity of second-order claims involving D, and the
+intelligibility of questions about whether D is good. But on the latter
+part what matters is not the possibility that such a claim is false, as
+in the standard presentation, but that such a claim is true.
+
+So that's Moore. Why is he relevant to our story? Well a lot of
+philosophers thought that a lot of the arguments he made were
+successful, but that his conclusion - non-naturalist realism - was
+unacceptable. So they wanted a way out. And non-cognitivism was
+advertised as being a way out of the argument.
+
+If \emph{D is good} just means \emph{Hooray for D!}, then you can accept
+a lot of Moore's premises without accepting his conclusions. Asking
+whether it is good that X is D is different to asking whether it is D
+that X is D. The latter is asking a factual question about the world;
+the former is asking whether to cheer for a different fact. And asking
+whether D1, D2 etc are all good does make sense, and the questions do
+have something in common. They are all questions about what one cheers
+for - that's the common factor. And of course this approach handles the
+standard presentation of the open question argument - which probably
+does show up in something like this form in Ayer (1936) - just as
+smoothly. Of course it makes sense to ask \emph{X is D, but do I cheer
+it?} for any D.
+
+So that's where our story starts. Moore convinced people that a certain
+kind of reductionist naturalism was a non-starter. Wanting to hold on to
+ethics, but not at the price of non-naturalism, many philosophers
+responded by adopting non-cognitivism. But this relied on a heavy-duty
+fact/value distinction, and seemed to undermine the philosophical
+significance of moral theorising. And the first significant push back
+against non-cognitivism came from people who wanted to complicate the
+fact/value distinction, with thick concepts as their primary weapon for
+muddying the waters.
+
+\hypertarget{for-next-time}{%
+\subsection{For Next Time}\label{for-next-time}}
+
+There is no class next week for Labor Day. I'm not going to write
+anything this long for any upcoming class - I didn't mean this to be
+this long. But we'll cover three things.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Arthur Prior's objections to Hume's ``No ought from an is'' principle.
+\item
+  Philippa Foot's discussion in ``Moral Arguments,'' especially the
+  discussion of rudeness.
+\item
+  If time, Williams's introduction of the term `thick concepts' in
+  Chapter 7 of \emph{Ethics and the Limits of Philosophy}.
+\end{enumerate}
+
+Of these, the priority is point 2; I plan on having us go through that
+paper pretty carefully. But hopefully we'll have enough time to say
+something about Prior and Williams as well.
+
+\hypertarget{references}{%
+\subsection*{References}\label{references}}
+\addcontentsline{toc}{subsection}{References}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\hypertarget{ref-Anderson1995}{}%
+Anderson, Elizabeth. 1995. \emph{Value in Ethics and Economics}.
+Cambridge, MA: Harvard University Press.
+
+\leavevmode\hypertarget{ref-Anscombe1957}{}%
+Anscombe, Elizabeth. 1957. \emph{Intention}. Oxford: Basil Blackwell.
+
+\leavevmode\hypertarget{ref-Ayer1936}{}%
+Ayer, Alfred. 1936. \emph{Language, Truth and Logic.} London: Gollantz.
+
+\leavevmode\hypertarget{ref-Bosanquet1903}{}%
+Bosanquet, Bernard. 1903. {``Hedonism Among Idealists (i.).''}
+\emph{Mind} 12 (46): 202--24.
+\url{https://doi.org/10.1093/mind/XII.2.202}.
+
+\leavevmode\hypertarget{ref-Foot1958}{}%
+Foot, Phillipa. 1958. {``Moral Arguments.''} \emph{Mind} 67 (268):
+502--13. \url{https://doi.org/10.1093/mind/LXVII.268.502}.
+
+\leavevmode\hypertarget{ref-Humberstone1992}{}%
+Humberstone, I. L. 1992. {``Direction of Fit.''} \emph{Mind} 101 (401):
+59--83. \url{https://doi.org/10.1093/mind/101.401.59}.
+
+\leavevmode\hypertarget{ref-Hurka2021}{}%
+Hurka, Thomas. 2021. {``{Moore's Moral Philosophy}.''} In \emph{The
+{Stanford} Encyclopedia of Philosophy}, edited by Edward N. Zalta,
+{S}ummer 2021.
+\url{https://plato.stanford.edu/archives/sum2021/entries/moore-moral/};
+Metaphysics Research Lab, Stanford University.
+
+\leavevmode\hypertarget{ref-Keefe2018}{}%
+Keefe, Patrick Radden. 2019. \emph{Say Nothing: A True Story of Murder
+and Memory in Northern Ireland}. New York: Doubleday.
+
+\leavevmode\hypertarget{ref-KeynesMEB}{}%
+Keynes, John Maynard. 1938. {``My Early Beliefs.''} In \emph{The
+Collected Writings of John Maynard Keynes}, X:433--51. London:
+Macmillan.
+
+\leavevmode\hypertarget{ref-Kirchin2017}{}%
+Kirchin, Simon. 2018. \emph{Thick Evaluation}. Oxford: Oxford University
+Press.
+
+\leavevmode\hypertarget{ref-Lewis1989b}{}%
+Lewis, David. 1989. {``Dispositional Theories of Value.''}
+\emph{Aristotelian Society Supplementary Volume} 63 (1): 113--37.
+\url{https://doi.org/10.1093/aristoteliansupp/63.1.89}.
+
+\leavevmode\hypertarget{ref-Moore1903}{}%
+Moore, G. E. 1903. \emph{Principia Ethica}. Cambridge: Cambridge
+University Press.
+
+\leavevmode\hypertarget{ref-Murdoch1956}{}%
+Murdoch, Iris. 1956. {``Vision and Choice in Morality.''}
+\emph{Proceedings of the Aristotelian Society} 30 (1): 32--58.
+\url{https://doi.org/10.1093/aristoteliansupp/30.1.14}.
+
+\leavevmode\hypertarget{ref-Murdoch1970}{}%
+---------. 1970. \emph{The Sovereignty of Good}. London: Routledge;
+Kegan Paul.
+
+\leavevmode\hypertarget{ref-Ohler2016}{}%
+Ohler, Norman. 2016. \emph{Blitzed: Drugs in the Third Reich}. New York:
+Mariner Books.
+
+\leavevmode\hypertarget{ref-Palmer1941}{}%
+Palmer, R. R. 1941. \emph{Twelve Who Ruled}. Princeton, NJ: Princeton
+University Press.
+
+\leavevmode\hypertarget{ref-Sider2012}{}%
+Sider, Theodore. 2011. \emph{Writing the Book of the World}. Oxford:
+Oxford University Press.
+
+\leavevmode\hypertarget{ref-Vayrynen2013}{}%
+Väyrynen, Pekka. 2013. \emph{The Lewd, the Rude and the Nasty: A Study
+of Thick Concepts in Ethics}. Oxford: Oxford University Press.
+
+\leavevmode\hypertarget{ref-Weatherson2019}{}%
+Weatherson, Brian. 2019. \emph{Normative Externalism}. Oxford: Oxford
+University Press.
+
+\leavevmode\hypertarget{ref-Williams1985}{}%
+Williams, Bernard. 1985. \emph{Ethics and the Limits of Philosophy}.
+London: Routledge.
+
+\end{CSLReferences}
+
+\end{document}
