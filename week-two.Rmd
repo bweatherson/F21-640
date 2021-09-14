@@ -1,0 +1,200 @@
+---
+title: 'PHIL 640: Week Two - Moral Arguments'
+author: "Brian Weatherson"
+date: "September 13, 2021"
+output:
+  pdf_document:
+    keep_tex: yes
+    fig_caption: yes
+    latex_engine: xelatex
+geometry: margin=1.5in
+mainfont: SF Pro Text Light
+mainfontoptions: BoldFont = SF Pro Text Medium
+mathfont: Fira Math
+header-includes: \linespread{1.18}
+bibliography: Rbib.bib
+---
+
+## The Is-Ought Gap
+
+There is this famous principle, usually credited to Hume, which says that moral and factual claims occupy distinct realms. The bumper sticker version of it - and it actually wouldn't be a bad bumper sticker - says **No ought from an is**. More precisely, there is no way to validly deduce a moral claim from a factual one.
+
+Now there are plenty of cases where this seems like a good bit of advice. For instance, it tells us immediately that there is something wrong with the following bit of reasoning.
+
+1. Public opinion tolerates 100 American deaths per day in car crashes.
+2. So it should tolerate 100 deaths per day from other causes.
+
+And from 2 you might get some claim like vaccine mandates are a bad thing or something. But we should already get off the boat before that. This looks like a bad ought-from-an-is argument. Someone who approves of this way of looking at arguments will say that the argument has a hidden premise. It should have gone like this.
+
+1. Public opinion tolerates 100 American deaths per day in car crashes.
+2. It should tolerate anything similar to what it actually tolerates.
+3. So it should tolerate 100 deaths per day from other causes.
+
+And making premise 2 visible is useful, because it is kind of obviously false. After all, premise 2 entails that we should tolerate everything we do tolerate, and that's pretty clearly false.
+
+The lesson here is not meant to be something particular about vaccines or public opinion or anything. It's rather a certain way of looking at moral argumentation that says that there is always a moral premise in arguments for moral conclusions. Now the question before us is whether this 'always' is true. You could think that the heuristic _Look for hidden moral premises_ is a good heuristic, and still think that it isn't always true that there are always these moral premises. So let's turn to that question.
+
+In "The Autonomy of Ethics", Arthur Prior -@Prior1960 has these influential counterexamples to the idea that an argument with a moral conclusion always has moral premises. Let's work through the three kinds of cases he gives in turn.
+
+The first is just or-introduction, though Prior's example should come with some kind of content warning.^[Calling it  a trigger warning seems gauche in this context. Note that Prior was at this stage a New Zealander living in England.]
+
+1. Tea-drinking is common in England.
+2. So, either tea-drinking is common in England, or all New Zealanders should be shot.
+
+Prior notes that if you think the conclusion is non-ethical, then the following works as a counterexample.
+
+1. Either tea-drinking is common in England, or all New Zealanders should be shot.
+2. Tea-drinking is not common in England.
+3. So, all New Zealanders should be shot.
+
+The big assumption here, and one we'll come back to, is that a statement is either factual or descriptive. If you want to say of this statement that it is sort of one, sort of the other, then you can (sort of) avoid the objection. But that's really all you need.
+
+The second argument involves null quantification.
+
+1. No one is over 20 foot tall.
+2. So, no one over 20 foot tall may sit in an ordinary chair.
+
+Again, if you want to deny that the conclusion is an evaluative statement, we could offer the following argument.
+
+1. No one over 20 foot tall may sit in an ordinary chair.
+2. Brian is over 20 foot tall.
+3. So Brian may not sit in an ordinary chair.
+
+The third example is in some ways the closest to our interests in this course. Prior's own version is I think a bit needlessly complicated, so let's substitute a slightly simpler one. (I've seen people quote something like this version when describing Prior; this simplification isn't at all original.)
+
+1. Brian is a baker.
+2. So Brian ought to do everything that all bakers ought to do.
+
+Note that the conclusion is not just a restatement of the premise. It could be that the premise is false and the conclusion true. Imagine that the only thing anyone ought to do is worship God. Then the conclusion would be true even if (as is fact the case) I am not a baker. But the conclusion does follow from the premise.
+
+The big question here is whether the conclusion is really a moral conclusion. Prior notes one big reason that you might think that it is not a moral conclusion; the term 'ought' can be substituted with all sorts of other terms and the validity of the argument is preserved.
+
+1. Brian is a baker.
+2. So Brian wants to do everything that all bakers want to do.
+
+## A Semantic Response to Prior
+
+Next I want to go over a recent response to Prior by Gillian Russell. This is set out in part in a paper she co-authored with Greg Restall [@RestallRussell2010], and partially in a sole authored paper [@Russell2011]. I'm not 100% sure I agree with Russell's response, but I think it's a very good way of setting out how Prior's arguments look from a certain perspective. And it's that perspective that I want us to be able to focus on for the next little while.
+
+There are two big assumptions behind Prior's paper.
+
+Syntactic Distinction
+:    The distinction between 'is' sentences and 'ought' sentences is broadly syntactic; it's about which words appear in the sentence, and where they appear in them.
+
+Exhaustive Distinction
+:    The distinction between 'is' sentences and 'ought' sentences is exhaustive; every sentence is in one or the other.
+
+Russell's response rejects both of these assumptions. She wants to understand the distinction semantically, not syntactically, and she rejects the exhaustiveness assumption. The second of those rejections is easy to explain - she thinks some sentences are neither descriptive nor evaluation. And in particular, disjunctions like _Tea-drinking is common in England or all New Zealanders should be shot_ is on neither side of the divide. But the first rejection is more interesting for our purposes, and takes a bit longer to explain.
+
+To offer a semantic conception of something, in this sense, is to explain it in terms of models, and in particular using semantic concepts - like truth, satisfaction, reference etc - in models. Here we'll be focussing on truth in a model. What's distinctive here are the kind of models being used. The models are going to be sets of worlds, as in standard models. But the worlds themselves will have structure. They will be ordered pairs $\langle d, m \rangle$, where $d$ is a full description of the descriptive, 'is', part of the world, and $m$ is the moral theory in the world. Sentences will be true or false relative to these pairs, not relative to purely descriptive claims. So if $d$ makes it true that Brian is a baker, and $m$ makes it true that all bakers should shave, then $\langle d, m \rangle$ makes it true that Brian should shave.
+
+Now we could at this point spend a lot of time going into what kind of thing $m$ is, and what kind of options there are for it. But that would be a different kind of course. Just note for now that $m$ will be some kind of mathematical structure whose ordinary interpretation will be in terms of maximally thin moral/ethical/evaluative notions.
+
+With this in mind, we can offer an account of what it is for a sentence to be descriptive or evaluative.
+
+- A sentence $S$ is descriptive iff for any $d, m, m^\prime$, the sentence has the same truth value in $\langle d, m \rangle$ as it has in $\langle d, m^\prime \rangle$.
+- A sentence $S$ is evaluative iff for any $d, d^\prime, m$, the sentence has the same truth value in $\langle d, m \rangle$ as it has in $\langle d^\prime, m \rangle$.
+
+That is, descriptive sentences don't change their truth value when you change the moral part of the world. And evaluative sentences don't change their truth value when you change the descriptive part of the world. And those both seem plausible enough claims
+
+Now note on this picture that a lot of sentences will be neither descriptive nor evaluative. A disjunction of a descriptive and an evaluative sentence will be neither. A conjunction of a descriptive and an evaluative sentence will be neither. Depending on how you understand $m$, all three of the conclusions in Prior's arguments will be neither.
+
+But that said, it will definitely be true that a descriptive sentence, or set of descriptive sentences, never entails an evaluative sentence, unless it's a trivial evaluative sentence like _Killing is wrong or it isn't_, or a contradictory descriptive sentence like _Killing is common and it isn't_. Why? Well, the conclusion is non-trivial, so it is false somewhere. Call that somewhere $\langle d_1, m_1 \rangle$. And the premise is non-trivial, so it is true somewhere. Call that somewhere $\langle d_2, m_2 \rangle$. Since the premise is descriptive, it doesn't change truth value when you change $m$, so it is still true at $\langle d_2, m_1 \rangle$. And the conclusion is evaluative so it doesn't change truth value when you change $d$, so it is false at $d_2, m_1$. So there is a world, namely $\langle d_2, m_1 \rangle$, where the premise is true and the conclusion false. So the argument isn't valid.
+
+Is this enough to rescue the no ought from an is principle? I think to answer that you need to answer two questions. First, how worried are you that so many sentences turn out to be neither descriptive nor evaluative? I'm a bit worried about this, but I'm not sure how worried I should be. Second, how happy are you with understanding worlds as pairs like $\langle d, m \rangle$? And this I think is the big question.
+
+Here's what I take Russell to have made a decent case for. If you're happy with understanding worlds as pairs like $\langle d, m \rangle$ then there is a response to objections like Prior's. It's not a pain-free response - it involves having this huge class of neither-descriptive-nor-evaluative sentences - but it's a response. And honestly if you did like no ought from an is, you probably should have been thinking of worlds as being something like these kinds of pairs all along.
+
+Now one way to think about the core puzzle we're going to be thinking about for the next few weeks is whether the best theory of thick concepts/terms is consistent with this way of thinking about worlds. One way to think about Foot's very different challenge to no ought from an is takes it to be a direct attack on that very way of thinking about things. So let's turn to Foot's paper.
+
+## Anti-Realism
+
+Let's start by looking at how Foot sees the debate about anti-realism (I won't here distinguish expressivism from non-cognitivism unless I have to) circa 1958. There are two things that I want to stress that may seem different to how they seem nowadays.
+
+One is that Foot does not agree with the relatively simple causal story I told last week. I think that story is widely believed nowadays, but since Foot was closer to the action than contemporary commentators, I want to put her version on the table as well.
+
+Here is the causal story I told. Moore proved that the only viable form of realism was non-naturalism. Later philosophers agreed with the proof, but couldn't handle the non-naturalism, so they gave up realism. That's very much not the story Foot tells.
+
+On Foot's telling, Moore's argument is little more than Hume's _No ought from an is_ principle. And that principle needs support, it can't be taken as given. And the support it gets comes from varieties of anti-realism. It's because we think _Murder is wrong_ is an imperative not an assertion that we think Moore's argument goes through, and not vice versa. Now as I said, I'm not really sure that's the way things played in the 1920s and 1930s, but I think Foot's view is worth taking seriously.
+
+The other thing that is striking is what she takes to be the main problem with anti-realist theories: they can't explain moral arguments. Now while this isn't a million miles from the Frege-Geach problem that became the biggest issue, it is a real challenge.
+
+It's clearly true that we do make moral arguments in our everyday life. If the conclusions of these are means to be expressions or imperatives, we need a story about how such arguments might work. The best non-cognitivist theory has two parts. One is that moral arguments are like practical arguments. Just like we might discuss what to do tonight and conclude _Let's go to a movie_, we can discuss morality and conclude with an imperative. The other is that for these arguments to work, there has to be something practical in the premises. Moral arguments can't start from nothing; they have to start from some level of moral agreement. It's this last condition that Foot disagrees with. She thinks that arguments about morality don't need an agreement on moral starting point any more than arguments about the shape of the earth.
+
+It turns out not to be crucial to the plot line of this paper, but it is striking that at the top of page 505 Foot thinks that one of the problems with anti-realism is that it would lead to subjectivism about moral evidence. And this is bad, because subjectivism about evidence is bad. What's striking about this from a contemporary perspective is that subjectivism about evidence is taken much more seriously now than Foot allows. It is very common to say that a person can decide for themselves "what is evidence for monetary inflation or a tumour on the brain". If evidence is probability raising, and probability is fairly permissive, then this kind of subjectivism will be true. (We could go into a long digression here about the particular puzzles of finding evidence concerning inflation, but that's for a very different course.)
+
+There are some amusing asides about anti-realism later in the paper. You can think of much of the paper as a kind of dilemma for expressivists. Either they are cognitivists (moral attitudes are beliefs) or non-cognitivists (moral attitudes are not beliefs, and more like feelings). The first horn gets you into problems like at the bottom of 508 - some things that are intuitively possible become impossible. But if you're a non-cognitivist, you get into the troubles described on 509. And that's where we get this amusing pair of lines.
+
+>  To suggest that he could refuse to admit that certain behaviour was rude because the right psychological state had not been induced, is as odd as to suppose that one might refuse to speak of the world as round because in spite of the good evidence of roundness a feeling of confidence in the proposition had not been produced. When given good evidence it is one's business to act on it, not to hang around waiting for the right state of mind. 
+
+There is also an interesting point at the top of 506 about the "special use of fact" that the expressivist needs. Early expressivists, notably Ayer, got into all sorts of trouble with triples like these.
+
+1. Murder is wrong.
+2. There are no moral facts.
+3. It is a fact that S, iff, S.
+
+By 1 and 3 we get that it is a fact that murder is wrong, seeming to contradict the claim in 2 that there are no moral facts. The expressivist needs a way out of this. The way they normally take is to posit an ambiguity in 'fact'. In the ordinary sense of 'fact', 2 is false and 3 is true. In the special philosophers' sense, 2 is true and 3 is false. But this leads to two problems. One is that this special philosophers' sense might involve just the kind of metaphysics that the expressivists pointedly wanted to get rid of. The other, which Foot rightly stresses, is that we haven't got a good account of this special sense.
+
+I think Foot here is getting at something that has become known as the problem of creeping minimalism. Minimalism about truth and facts, like in 3, is very attractive for expressivists. But it threatens to undermine the very statability of their view. They need to say things like 2 in order to be distinctive. But things like 3 make that hard to say.
+
+The standard solution, which again Foot sees coming, is to give an explicitly contrastive account of this special philosophers' sense of fact. (I think Allan Gibbard might be the clearest proponent of this approach.) What we really mean by 2 is that things like _Murder is wrong_ are just not made true in the same way that things like _The cat is on the mat_ is made true. There are a lot of things we might say about this contrastive approach, but let's just note one that's particularly relevant to Foot. If you go this way, you can't use expressivism/non-cognitivism to motivate a fact/value distinction, because you need the fact/value distinction to even be able to state the anti-realist view.
+
+## Rudeness
+
+So the part of this paper that is most relevant to us, and really the heart of the paper, is the discussion of rudeness. So let's spend a bit of time going over it. And I want to separate out a few different things Foot says about rudeness.
+
+### Rudeness is Evaluative
+
+As Foot says on 507, she takes "rude" to be an evaluative word. To call someone, or something, rude is already to make a negative evaluation. It might not be an all-things-considered negative evaluation, but it is a negative evaluation nonetheless.
+
+This matters because it affects what we think a violation of the Humean gap looks like. For Foot, the counterexamples will have this form.
+
+1. Fred did X.
+2. So, Fred was rude.
+
+And that's it - a descriptive premise and an evaluative conclusion. This isn't the only way one could use 'rude' to get to a puzzle. You could use it as the middle step, like in...
+
+1. Fred did X.
+2. So, Fred was rude.
+3. So, Fred acted wrongly.
+
+And now you could argue that the middle step is either descriptive, in which case the argument from 2 to 3 is a counterexample, or evaluative, in which case the argument from 1 to 2 is a counterexample. That's not what Foot does. She just uses the argument from 1 to 2.
+
+And I suspect she does this because she doesn't think the argument from 2 to 3 is valid. As she notes, there are cases where being rude is the right thing to do. She says she is setting those cases aside, though I didn't at all see why this was playing fair. You can't just set aside whatever you choose I think. But perhaps she is being more sensitive to this point than that way of putting makes it seem.
+
+Anyway, the thing I want to take away from this is that it is misleading to treat her as holding that "rude" has descriptive and evaluative elements. Rather, it's an evaluative term that has some descriptive constraints.
+
+### Causing Offence
+
+I couldn't always tell just what Foot thought rudeness was. The initial account, on the bottom of 507, is 
+
+> The right account of the situation in which it is correct to say that a piece of behaviour is rude, is, I think, that this kind of behaviour causes offence by indicating lack of respect.
+
+There are a few things to unpack there. For one, it isn't obvious that this is a morally neutral description. The 'lack of respect' condition at the end is arguably evaluative. But maybe whether something 'indicates a lack of respect' is a descriptive condition even if 'respect' is itself a moral notion. We could also I think ask if 'offence' is evaluative or descriptive, but perhaps it is descriptive enough to let through.
+
+In this account, what matters is that the **kind** of behaviour causes offence. On the next page, the inference is from behaviour actually causing offence to it being rude. This seems odd twice over. For one thing, the reference to lack of respect dropped out. For another, we've gone from talk about kinds to talk about individual actions.
+
+An account in terms of kinds seems clearly superior. I can rudely gossip about someone behind their back, but if I'm a skilled enough gossip I will never cause offence because they will never find out it was me. Or I can be rude to someone's face, but if they are distracted it may not actually cause offence. Now what's true is that the kind of behaviour I engage in on both occasions does cause offence.
+
+Usually this talk about properties of kinds of activities does not mean that a kind has a property as long as one instance has that property. A single goat that tap-dances does not make goats the kind of thing that tap-dance. So it might be that some action causes offence (by indicating lack of respect) without being the kind of action that causes offence. It might just have been that someone around took offence at very strange things.
+
+This raises a problem I think for the argument on 508. We have to be very careful about how we specify what goes into O. The wording on 508 suggests it is that some offence was actually caused. But that is neither necessary nor sufficient for rudeness. We can totally say that offence was caused but the action wasn't rude; it's just that the other person was hyper-sensitive. (A celebration of sporting success might cause offence to very thin-skinned opponents without being rude.) I think Foot can get out of the problem here by saying that O isn't a claim that this action actually causes offence, but that it is a kind that typically does. But this is a tricky point, and if we're going to argue that there is a metaphysical necessitation here, we have to watch out for slippages.
+
+Relatedly, the last line of the paragraph that runs from 508 to 509 makes very little sense to me. It seems fine to apologise for rude behaviour while acknowledging no offence was caused. In the middle of an office rushing to meet a deadline, I might do something rude, quickly apologise, even while noting that everyone is so busy that no one had time to even be offended. There isn't anything incoherent about this at all. So I don't really understand what the argument here is supposed to be. 
+
+## No Room for Rudeness
+
+It's only a couple of sentences, but I want to end the discussion of Foot with what she says in the middle of 509. This is the question that will become centrally important in what we discuss in a couple of weeks time. What should we say about the person who rejects the concept of rudeness? 
+
+It's clear what Foot wants to say about the kind of person she has in mind. (Which may not be the kind of person we have in mind.) They will just not use terms like 'rude', and we can't have any kind of conversation with them about rudeness, etiquette, or anything similar.
+
+I worry here that there are two kinds of people that are relevant, and Foot is running them together.
+
+1. People who think 'rude' is like 'phlogiston', a term from a failed theory.
+2. People who can reliably track rude behaviour, but do not believe that it has any moral significance.
+
+What Foot says makes sense about people in category 1. But I'm not sure what she has to say about people in category 2. Indeed, it is arguable that she doesn't really believe in category 2, she thinks this is sort of a way of being in category 1.
+
+I'll leave it there with the notes, though we've got plenty more to talk about in class. And if we have time we'll get onto the short introduction to thick concepts at the very end of Chapter 7 of _Ethics and the Limits of Philosophy_.
+
+But we're not moving straight on to Williams. Instead we'll stick with the chronological order, and next week look at John McDowell's shapelessness thesis. This is interesting both for its connection to a bit of 20th century philosophy that is talked about way less than just a few years ago - Wittgenstein on rule following - but also because it firmly connects thick concepts to moral realism.
