@@ -1,0 +1,478 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \setmainfont[]{Baskerville}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={PHIL 640: Supporting Notes for Four Arguments},
+  pdfauthor={Brian Weatherson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1.4in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\linespread{1.17}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{PHIL 640: Supporting Notes for Four Arguments}
+\author{Brian Weatherson}
+\date{September 20, 2021}
+
+\begin{document}
+\maketitle
+
+\hypertarget{relativism}{%
+\subsection{Relativism}\label{relativism}}
+
+The orthodox approach to semantics involves a commitment to something
+like the correspondance theory of truth. Declarative sentences are
+(typically) true or false, and when they are true, this is because they
+correspond to how things are. That last sentence needs a lot of spelling
+out. How can a sentence correspond to anything, apart from another
+sentence? Well, a sentence has a \textbf{content}. And that content can
+be true or false relative to various things. What things? Well, those
+are the matter of how things are in the platitude.
+
+But how are things? It helps to work through an example. Let S be the
+sentence \emph{Brian is sitting}. We will write \(⟦S⟧\) for the content
+of that sentence - these weird double square brackets have become the
+standard way for expressing the function from sentences to their
+contents. Now we want S to be true if, and only if, Brian is indeed
+sitting when S is uttered. That last bit, when S is uttered, is
+important. S doesn't say that I always sit, just that I'm now sitting.
+How should we incorporate that into our theory.
+
+One approach is to build the time into the content of the utterance. On
+this view \(⟦S⟧_t\) is \textbf{Brian is sitting at t}, where t is the
+time the sentence was uttered. The subscript is to say that this is the
+content of S at t. On this view there is no such thing as \emph{the}
+content of S, since it has different contents at different times of
+utterance. Then `how things are' is the entire world, from Big Bang to
+Big Crunch. Call the world w, for simplicity, because we'll use it a
+lot. And we'll write \(\vDash_w⟦S⟧_t\) - which you can read as saying
+that the content of S is true at w, to say that this content is true.
+This approach is called \textbf{eternalism}, which is an annoyingly
+polysemous term in philosophy. If \(⟦S⟧_t\) is true, it is always true,
+hence the eternal. It's true even if I stand up, because \(⟦S⟧_t\)
+includes a reference to a time, and I stand at a later time. To
+introduce one more technical term, the time is part of the
+\textbf{context}; something that affects what the content of a given
+utterance of the sentence is.
+
+Another approach is to build the time into how things are. On this
+approach the world does go from Big Bang to Big Crunch, but how things
+are doesn't just involve a world, it involves a time too. (If you like
+you can make this time metaphysically special - like on a spotlight view
+- but that's not part of the linguistic theory.) The content of \(⟦S⟧\)
+is just what it looks like: that Brian sits. But that very content is
+true at some times and false at others. We write this as
+\(\vDash_{\langle w, t \rangle}⟦S⟧\). This view is known as
+\textbf{temporalism}, because the things that are true or false are
+temporal entities, they change truth value over time. And to introduce
+another technical term, on this theory the \textbf{index} is the pair
+\(\langle w, t \rangle\). The index is what the sentence is measured up
+against.
+
+What is the difference between these views? There is a view that it's a
+purely notational difference, that we shouldn't care about which is
+right. But that's a minority view. Most philosophers think there is a
+big issue here. The problem is that there is less agreement about what
+exactly the big issue is. We want contents, the outputs of the \(⟦⟧\)
+function to play some philosophical role. The problem is that there are
+too many possible roles for them to play. Here are five possibilities.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The contents of what we believe.
+\item
+  The contents of what we say (if you think we have independent grasp on
+  this).
+\item
+  The contents of `that'-clauses, especially in indirect speech reports.
+\item
+  The things we agree or disagree with when we agree/disagree with an
+  assertion.
+\item
+  The things we retract when we no longer endorse our former assertions.
+\end{enumerate}
+
+Sometimes these five considerations push in the same direction. So
+consider the sentence \emph{I was born in Australia}. That's true when
+uttered by me, and false (I think) when uttered by anyone else here. But
+when I say it, you don't disagree with me. And you don't report me by
+saying ``Brian said that I was born in Australia''. For reasons like
+this, everyone agrees that who the speaker is is relevant to the
+\textbf{content} of an utterance involving a first-person pronoun, not
+to the \textbf{index}. It's not that I say something that's true
+relative to me and false relative to you. It's that I say something
+that's true full stop, even though had you uttered the same words, you
+would have said something false. That's for the simple reason that you
+would have said something different.
+
+But sometimes these considerations come apart. In the
+temporalism/eternalism debate, some considerations push towards putting
+time into the index, and some into the content. And so there's a debate
+here, but I'm not going to go deep into it.
+
+Just one quick thing to note though. I've talked so far as if it is
+obvious that worlds go into indices. And I think it is obvious that's
+true. But not everyone agrees. Some philosophers have recently argued
+that worlds should go into contexts and hence into contents. So when I
+say ``There is a famous detective that lives on Baker Street'', that's
+false, but the same utterance would be true in Sherlock-Holmes-world.
+That's because, says orthodoxy, there is a proposition \emph{That a
+famous detective lives on Baker Street} which is false in our world and
+true in Sherlock-Holmes-world. But some philosophers think that just
+like times go into contents (given eternalism), worlds should go into
+contents too. So when I say ``There is a famous detective that lives on
+Baker Street'', I express the proposition \emph{That a famous detective
+lives on Baker Street in w}, where w is a name for our world. As I said,
+I think this is an absurd view, but it's worth noting it is out there.
+Still, most people think that indices are non-trivial, and they include
+at least worlds.
+
+A huge amount of work in philosophy, especially in the 2000s, was on
+questions around the nature of context and index. In particular, these
+three questions took up a lot of people's time and attention. (The first
+by far the most, then the second, and then the third.)
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Which utterances are such that their truth is sensitive to context? A
+  huge debate, one of the biggest of the 90s and 2000s, was about
+  whether knowledge ascriptions were among them, with
+  \textbf{contextualists} (about knowledge) saying that utterances like
+  ``Brian knows that cars exist'' could be true in regular contexts, but
+  false in `sceptical contexts'. But this was merely one manifestation
+  of a discipline wide search for context-sensitivity.
+\item
+  If utterances are sensitive in this way, is this because the context
+  affects their content, or because it affects the index they are
+  evaluated against?
+\item
+  If it does affect the index, does it do so in a uniform way, or are
+  there some sentences that interact differently with indices to others?
+\end{enumerate}
+
+Don't worry about the last - I've got it there for completeness. It's
+mostly because the most important figure in this whole debate, John
+MacFarlane, disagrees with the way I've set up the debate so far. And it
+would be misleading to write his view out of the picture, since he is
+really the most important figure in it. MacFarlane's view is
+particularly motivated by issues about retraction, but I'm going to set
+those issues aside, and mostly set the precise views of MacFarlane aside
+as well.
+
+For an example of what's at stake at least in questions 1 and 2, imagine
+that we have with us an ancient Spartan who very helpfully speaks
+English. And now let \emph{S} be the sentence ``Infanticide is wrong''.
+We endorse that sentence, and the Spartan rejects it. Here are three
+possible philosophical takes on that dispute.
+
+First, we could have an invariantist approach. One of us, presumably us,
+is right, and the other is wrong. This is the view that most moral
+realists take, though actually a lot of views that are not particularly
+realist could take it as well.
+
+Second, we could have what I'd call a \textbf{contextualist} approach.
+When we say ``Infanticide is wrong'', we speak truly. But when the
+Spartan says ``Infanticide is not wrong'', he speaks truly as well. Why?
+Because our sentences have different contents. The content of our
+sentence is \emph{That infanticide is wrong by contemporary standards}.
+And the content of the Spartan's sentence is \emph{That infanticide is
+wrong by Spartan standards}. And those propositions are both true.
+
+Third, we could have what I'd call a \textbf{relativist} approach.
+(Though note MacFarlane denies this is relativism; he calls this view
+`non-indexical contextualism'.) Both we and the Spartan speak truly. But
+we also disagree, because we endorse the very proposition that the
+Spartan rejects. How is this possible? Well, the proposition we are
+disputing is only true relative to an ordered pair of a world and a
+moral standard. Relative to our world/standard, it is true; relative to
+the Spartan's, it is false. It's just like if I said ``There is no
+famous detective living on Baker Street'', that's true, even though it
+expresses the negation of a proposition that a person in
+Sherlock-Holmes-world can truly express. In a figurative sense, we and
+the Spartan live in different moral worlds, so our thoughts and talk can
+clash, without either being wrong.
+
+This was a very long response to an argument Williams briefly makes
+against moral relativism. He thinks it is a problem for relativism that
+people in isolated moral communities won't know that there are other
+communities, and so won't know to relativise their moral talk. I think
+this is only a problem for moral \emph{contextualism}, not moral
+relativism properly speaking. The real moral relativist, in the sense of
+the previous chapter, does not think that the moral utterances that
+people make are in any sense about moral communities, or standards, or
+anything of the sort. Rather, they think that the theory of truth for
+the (simple) propositions those utterances express, involves relativity
+to communities/standards. And they don't have to say that competent
+speakers need realise that, any more than competent speakers have to
+know anything about the physics of time in order to use tensed language.
+
+\hypertarget{the-meta-ethical-trilemma}{%
+\subsection{The Meta-Ethical Trilemma}\label{the-meta-ethical-trilemma}}
+
+McDowell presents the following as an argument for non-cognitivism, but
+I find it more helpful to consider it as a trilemma (which is of course
+a trivial variation on McDowell's presentation.)
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Moral attitudes provide reasons.
+\item
+  Beliefs alone do not provide reasons.
+\item
+  Moral attitudes are beliefs.
+\end{enumerate}
+
+There are three obvious ways to respond to this, by denying each of the
+three lines. McDowell calls denials of 1 \textbf{descriptivism}. Certain
+kinds of reductivism will end up in this camp (if they don't end up as
+error theories.) He doesn't give a label for denials of 2, but it's the
+position he wants to take. And denials of 3 are
+\textbf{non-cognitivism}.
+
+There are a number of other ways to get out of the trilemma without
+cleanly denying any of the three steps.
+
+\begin{itemize}
+\tightlist
+\item
+  As always in philosophy, it is possible to say that the argument
+  equivocates. Here the most obvious equivocation is on `reason'.
+  Perhaps there is a hidden equivocation between \emph{motivating
+  reason} and \emph{justifying reason}. But a better way out is to say
+  that there is an equivocation between \emph{decisive reason} and
+  \emph{supporting reason}. Foot, for instance, denies 1 if `reason'
+  means \emph{decisive reason}, and denies 2 if `reason' means
+  \emph{supporting reason}.
+\item
+  The whole setup assumes that attitudes are the kind of thing that
+  provide reasons, and without that assumption (which is a lot less
+  popular now than it was 40 years ago) it isn't clear there is a
+  problem here.
+\item
+  You could deny more than 1 of the statements. The view in my book
+  entails that 1 and 2 are both false (while the view is neutral on 3).
+  But that's way outside the mainstream meta-ethical views.
+\item
+  You could deny that there is an inconsistency here to be resolved. I
+  \emph{think} you can develop a moral error theory that endorses all 3.
+\end{itemize}
+
+\newpage
+
+\hypertarget{beliefs-and-reasons}{%
+\subsection{Beliefs and Reasons}\label{beliefs-and-reasons}}
+
+McDowell offers two reasons for endorsing 2. He isn't maximally clear
+about them, but here is my best attempt at spelling them out in more
+detail. The first argument starts from what I think the `hydraulic'
+conception of reasons is meant to be.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  For the rational person, the reasons that motivate their actions are
+  the reasons that justify their actions.
+\item
+  Beliefs are passive states; all it takes to believe something is to
+  have a library in your head.
+\item
+  Motivating reasons are not passive.
+\item
+  So beliefs are not motivating reasons (from 2, 3).
+\item
+  So, for the rational person, beliefs are not justifying reasons.
+\end{enumerate}
+
+I think it's plausible to reject both 1 and 2. A rational person need
+only be sensitive to their reasons, not be motivated by them. Reasons
+can serve as guardrails, stopping the person when they are going to do
+the wrong thing, without motivating them when they are doing the right
+thing. And 2 will be false on a \textbf{functionalist} picture of
+beliefs. (Though some people think this is a reason to reject
+functionalism.)
+
+The other argument I think is more interesting. This is the argument
+from the idea that it must be possible to tell that a reason is a reason
+from a `sideways on' perspective. That is, it must be possible to tell
+that it is a reason from a neutral perspective. This view finds its
+modern expression in theories that demand that norms (moral, epistemic,
+whatever) are \emph{guiding}. Here's the argument I read McDowell as
+giving.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  If A is a reason for X, it is possible to tell from a neutral
+  perspective that A is a reason for X.
+\item
+  From a neutral perspective, it is not possible to tell that a belief
+  (alone) is a reason for any action.
+\item
+  So, beliefs (alone) are not reasons for action.
+\end{enumerate}
+
+This is a really interesting argument. I agree with McDowell both that 1
+is false, and that a lot of philosophical mistakes are caused by
+thinking that 1 is true. One thing that you get from people believing 1
+is you get a theory of reasons which is deeply tied up with formal
+notions of coherence. So for something to be a reason it has to
+logically entail the thing being done, or you have to be able to compute
+that the thing has maximal value, or something like that. These
+approaches seem false to me twice over. For one thing they licence all
+sorts of terrible - but utterly coherent - views. For another they don't
+even get the promised neutrality, since questions of logic, decision
+theory, and game theory, and hence of coherence, are just as hard to
+tell from the neutral perspective as moral questions.
+
+There is another more contemporary view that actually agrees with
+McDowell that beliefs can be reasons, but which is motivated by the same
+kind of `neutral perspective' consideration. This is the view that only
+thin moral beliefs can motivate. So a belief \emph{A is wrong} is a
+reason not to do A, but literally no other kind of belief can be
+reason-providing. Again, I think this is driven by a desire that reasons
+are detectable as reasons from a neutral perspective.
+
+\newpage
+
+\hypertarget{non-cognitivism-and-separation}{%
+\subsection{Non-Cognitivism and
+Separation}\label{non-cognitivism-and-separation}}
+
+I thought the argument in section 5 of McDowell's paper was really
+fascinating, but I'm not sure it has always been fully appreciated in
+the subsequent literature. (Not that I've read 100\% of it, or even
+close.) The argument is an attack on the view that attitudes involving
+thick concepts, like say `honest', involve two separate parts. On the
+one hand, they involve a belief that the honest thing satisfies the
+descriptive part of `honest'. On the other, they involve some kind of
+pro-attitude towards the thing in virtue of satisfying that descriptive
+component.
+
+One way to argue against this view would be to simply say that
+introspection does not reveal that the attitude is bifurcated this way.
+But that's a lousy argument I think. We shouldn't trust introspection
+that much. Here's a slightly better argument.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  If `honest' has an evaluative and a non-evaluative part, then someone
+  who doesn't share our values could understand the non-evaluative part.
+\item
+  If so, they could predict how we would apply the term, even without
+  sharing the values.
+\item
+  But someone who doesn't share our values can't predict that.
+\item
+  So `honest' doesn't have these two parts.
+\end{enumerate}
+
+But as Blackburn pointed out, in this argument premise 2 is false. If
+`honest' means `good in virtue of H', someone could understand H and not
+predict our usage of it. Here's a much more interesting argument that
+turns on the fact that neither we nor outsiders can factorise `honest'.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  From the inside, the evaluative part of `honest' feels non-arbitrary;
+  it doesn't seem like we just like honest things the way we might like
+  a flavour of ice-cream. Call this the non-arbitrariness constraint.
+\item
+  The non-arbitrariness constraint requires that we can identify the
+  descriptive features in virtue of which we positively evaluate them,
+  and do so independently of our own evaluation.
+\item
+  We can only identify the descriptive parts of our own thick concepts
+  independently of our own evaluations if an outsider, who did not share
+  or understand our values, could identify them.
+\item
+  An outsider could not make this identification - this is both
+  intuitive, and arguably the result of the long Wittgensteinian
+  discussion in section 3.
+\end{enumerate}
+
+And now we have a problem. Line 1 says that our own attitudes involving
+thick concepts satisfy the non-arbitrariness constraint, but lines 2-4
+together imply that they could not.
+
+This is why I think it matters that we can't identify the honest, or
+kind, or cruel, behaviors independently of our values. Given
+non-cognitivism, the only way we can pick out the kind behaviours are as
+those that morally resemble, by our lights, the paradigms of kind
+behaviour. But it would feel hopelessly circular to say that we admire
+kind behaviour because things only fall under the concept `kind' if we
+admire them. So there is a problem for non-cognitvists here.
+
+If I were a non-cognitivist, I'd try to get out of the problem this way.
+All that non-arbitrariness requires is that on any given occasion of
+use, we can specify in a non-circular way why we admire the people we
+admire. And that's possible even if we can't specify exactly what
+kindness is. But is this enough for the non-cognitivist?
+
+\end{document}

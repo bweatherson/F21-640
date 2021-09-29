@@ -1,0 +1,124 @@
+---
+title: 'PHIL 640: Supporting Notes for Four Arguments'
+author: "Brian Weatherson"
+date: "September 20, 2021"
+output:
+  pdf_document:
+    keep_tex: yes
+    fig_caption: yes
+    latex_engine: xelatex
+geometry: margin=1.4in
+mainfont: SF Pro Text Light
+mainfontoptions: BoldFont = SF Pro Text Medium
+mathfont: Fira Math
+header-includes: \linespread{1.17}
+---
+
+
+## Separation Arguments
+
+There are a few arguments circulating around about how the difficulty of separating out the descriptive part of thick concepts tells us ... _something_ ... about the nature of value. Some of these look like really terrible arguments, but I think there's a pretty good one in section 5 of McDowell's 1981 paper.
+
+But let's start with an argument from section 2 of that paper. This argument seems to be more widely discussed, and also a very bad argument. The former is a reason to discuss it; the latter is a reason to be a bit quick about it. Here's how I'd reconstruct the argument.
+
+1. If non-cognitivism is true, then some reductive analysis of thick concepts into maximally thin concepts plus descriptive stuff is possible.
+2. If such a reductive analysis is possible, then there is a descriptive concept that is necessarily extensionally equivalent to the thick concept.
+3. If there is such a concept, then a _stranger_ (meaning here a person who doesn't understand our value system) could share it.
+4. If the stranger could share such a descriptive concept, then they could predict how we would apply the thick concept in new cases.
+5. Strangers cannot predict how we apply thick concepts in new cases.
+6. So no reductive analysis of thick concepts is possible (from 2-5).
+7. So non-cognitivism is false (from 1 and 6).
+
+I've separated out line 1 because Elstein and Hurka are interested in replying to the argument to line 6, independent of whether non-cognitivism is true. But I think it's common ground that 1 is true, so that extra step is fine.
+
+Now this argument seems bad to me because (as Blackburn pointed out straight away), there is no real reason to think that 2 is correct. Let's take a simple example. This analysis isn't going to work, but it's enough to show that this argument fails. Assume that for a person to be selfish, the following conditions must all be met.
+
+- The person prioritises their interests over those of others.
+- The person is all-things-considered a bad person.
+- At least part of the explanation of the second point is the first point.
+
+There is nothing in that which a non-cognitivist need reject. But it doesn't follow that there is anything descriptively equivalent to 'selfish'. After all, not everyone who prioritises their interests over those of others is selfish; they have to also satisfy the second clause. Now I don't mean to say that this is a good analysis. It clearly isn't, and we'll get back to that point. But the possibility of it suffices to show that this argument doesn't work.
+
+Elstein and Hurka (on page 519) say that Williams gives a version of the same argument. But they then attribute an argument to Williams which they say is the same argument. That can't possibly be right, since Williams's argument makes no reference to strangers. But I think 2 is part of that alternative argument as well. And maybe they think we can replace 3-5 in McDowell's argument with:
+
+- There is no descriptive concept that is necessarily extensionally equivalent to the thick concept.
+
+I don't know though; that seems like a bold claim. And McDowell certainly isn't taking it as a premise, though maybe Williams is. Anyway, it seems like a bad argument, because it ignores the possibility of analyses like my toy analysis of selfish. Elstein and Hurka say that it is bad because it assumes that any analysis will be 'Descriptively Definite', but I don't think that's the problem. I'm not 100% sure what they mean by that, but I think this analysis of 'selfish' is Descriptively Definite, and it shows that premise 2 is wrong.
+
+But that's not, to my mind, the most interesteding argument in McDowell's paper. I thought the argument in section 5 of McDowell's paper was really fascinating, but I'm not sure it has always been fully appreciated in the subsequent literature. (Not that I've read 100% of it, or even close.) Here's how I'd write it.
+
+1. From the inside, the evaluative part of 'honest' feels non-arbitrary; it doesn't seem like we just like honest things the way we might like a flavour of ice-cream. Call this the non-arbitrariness constraint.
+2. The non-arbitrariness constraint requires that we can identify the descriptive features in virtue of which we positively evaluate them, and do so independently of our own evaluation.
+3. We can only identify the descriptive parts of our own thick concepts independently of our own evaluations if a stranger could identify them.
+4. A stranger could not make this identification - this is both intuitive, and arguably the result of the long Wittgensteinian discussion in section 3.
+
+And now we have a problem. Line 1 says that our own attitudes involving thick concepts satisfy the non-arbitrariness constraint, but lines 2-4 together imply that they could not.
+
+This is why I think it matters that we can't identify the honest, or kind, or cruel, behaviors independently of our values. Given non-cognitivism, the only way we can pick out the kind behaviours are as those that morally resemble, by our lights, the paradigms of kind behaviour. But it would feel hopelessly circular to say that we admire kind behaviour because things only fall under the concept 'kind' if we admire them. So there is a problem for non-cognitvists here.
+
+As a small exegetical point, note the (kind of jerk-ish) footnote about Ayer, where he says that this argument won't trouble all non-cognitivists. I think he means there that Ayer would be happy to say that moral evaluations are completely arbitrary - they are just what we happen to cheer or boo. Whether that's a fair thing to say about Ayer or not, it does mean that we should be taking McDowell to be giving an argument that works against every form of non-cognitivism. But most people who take themselves to be engaging with McDowell don't present arguments that make any distinction amongst non-cognitivists.
+
+If I were a non-cognitivist, I'd try to get out of the problem this way. All that non-arbitrariness requires is that on any given occasion of use, we can specify in a non-circular way why we admire the people we admire. And that's possible even if we can't specify exactly what kindness or honesty is. So think back to the selfish person. For any given selfish person, I can say why I don't admire them: they put their interests ahead of others.
+
+But here we get to a delicate point. By this account of selfishness, I don't have a full account of why I don't admire these people. They may do something else that makes them all-things-considered good. Is that enough to get back into arbitrariness? I think the thing to do here is to make a distinction that's really crucial within thinking about moral explanations.
+
+- Some moral explanations are **conclusive**. Given what we say in explaining the phenomena, it is necessary that the moral evaluation obtain.
+- Some moral explanations are **complete**. Given what we say in explaining the phenomena, we don't need anything else to infer that the moral evaluation obtains.
+
+All conclusive explanations are complete, but the converse does not obtain. Or so I think; this gets at a hard question in the metaphysics of morality. To make it more concrete, think about the following example. A says that X is a bad person, and you ask why. A says "X deliberately killed a child." I want to say this is a complete explanation; you now know enough to know why X is bad. But it isn't conclusive. Maybe X is a bomber pilot who bombed a nuclear missile launch site, preventing the start of a nuclear war, but killing a child that (X knew) was close to where the bomb detonated. Probably that was not a bad thing for X to do. (I don't have a lot of sympathy for either absolutist views that say X should have let the nuclear war start, or the kind of view that says it isn't really killing if X was primarily motivated to do something else.)
+
+Now here's the metaphysical point. Go back to the regular case where there are no extenuating circumstances. Does the explanation of why X is a bad person have to include the absence of extenuating circumstances? My view is that it doesn't have to; or at least we can make sense of a theory of moral explanation where it doesn't. On that notion, some explanations (like "X deliberately killed a child") are complete but not conclusive.
+
+So here's how I'd respond to McDowell's argument more carefully. Non-arbitrariness requires that we can (at least in theory) give a complete explanation of our moral attitudes in descriptive terms. But the ability of strangers to predict our evaluations requires that they have a conclusive explanation of the attitudes we have. And there is no reason that we need to have such an explanation, so no reason to think that the stranger has it.
+
+## Elstein and Hurka's Positive Theories
+
+Elstein and Hurka give two (and a half?) different theories. They say the second is for 'virtues', but then the theory applies in the first instance to acts, so I'm a bit puzzled at exactly how the theories are meant to fit together. It's worth setting these out a bit pedantically. Here is the first one - a bit simplified and a bit tidied up from what they give on 522. For some positive thick term T, the account says that x is T if there is some set of properties such that:
+
+  - x has every member of the set
+  - Each of the properties is to do with descriptive kind D (which varies for different T)
+  - Any y that has every member of the set is good.
+
+This, like the toy analysis of 'selfish' will violate premise 2 of McDowell's original argument. It's a little trickier, but I think it will also be consistent with the inability of strangers to predict how we will continue to apply the term. The stranger might not know, even with a huge amount of data, that there is another set satisfying the second and third clause. 
+
+How will this engage with the non-arbitrariness concern? Here I think it does worse. If there were such sets - and we could identify their members - then our evaluations of selfish people as bad would not feel arbitrary. But if we cannot identify the sets, and Elstein and Hurka give no evidence we can, I suspect it might still feel arbitrary.
+
+They give a second option for 'virtue-related' concepts T. The idea is that an act x is T just in case for some particular  property-function D (which varies by T, but is in some sense descriptive):
+
+- x is D(good)
+- Anything that is D(good) is good.
+
+By a property-function here, I mean a function that takes another property as input, and returns a property. So here's a property function.
+
+- D(P)  = the property of sticking to a P goal despite distractions and temptations.
+
+When P is descriptive, D(P) will be descriptive. For instance D(popular) is a descriptive property, the property of sticking to a popular goal despite distractions and temptations. But note that the account here is moralised twice over. We put moral properties both into D(P), and we have a constraint that D(good) is good.
+
+Now the particular instances of this kind of account they give are not I think very plausible. Integrity, for example, doesn't require stickinig to goals that in the abstract good. It requires sticking to goals that are good relative to the 'distractions'. Working on an open access philosophy textbook is a significant good, but it wouldn't show integrity to avoid fighting Nazis to finish it. (The beer mats example is a poor model here.) 
+
+There is a bigger problem for the account of courage. Here D(P) is the property of accepting harm for the sake of things with greater P than the evil of that harm. A deontologist won't accept that all D(value) acts are good, which they need for the definition to make sense. After all, some D(value) acts are rights violations. I think they are thinking that we can use a notion of 'value' in the definition that is sensitive to the badness of violating rights. But that's a very substantial meta-ethical assumption, and it would be bad if the very definition of 'courage' is hostage to that definition.
+
+I think the stuff towards the end about relation R (on page 530) is an attempt to deal with something like this problem. But I don't really understand how it is meant to help get around the problem that rights-based theories are going to say you need a moral constraint (e.g., that the act doesn't violate rights) on any universal moral generalisation.
+
+### An Argument for Thin Centralism
+
+In the objections and  replies section there was an interesting argument I wanted to tease out. Let's say that for any end E, either the following are both true, or they are both false.
+
+- It shows integrity to stick to a goal of producing E in the face of distractions and temptations.
+- It shows courage to stick to a goal of producing E in the face of risk of physical danger.
+
+If there is this kind of correlation over possible values of E, it needs to be explained. And the thin centralist has an easy explanation. Both of these are true when E is a good end, and both are false when it is not. Does the thick centralist (like Williams) have an explanation that's as good? Should they even concede that the correlation obtains?
+
+### Grounding
+
+Previously I'd summarised Elstein and Hurka's view as follows: x is T iff for some D from the class relevant to T, x is good in virtue of being D. That's not quite what they say. They don't talk about what explains, or grounds, the goodness. They do say that it is a necessary truth that anything which is D is good. But as we've seen discussed ad nauseum in the last 10 years in metaphysics, necessary connections are not quite the same thing as these kind of grounding explanations.
+
+I think they'd be better off appealing to grounding though, especially if you allow contingent grounding. So here is how I would think it is better to give their first analysis. x is T if there is some set of properties such that:
+
+  - x has every member of the set
+  - Each of the properties is to do with descriptive kind D (which varies for different T)
+  - That x is good is fully grounded in the fact that x has every member of the set.
+  
+If grounding explanations need only be complete (in the above sense) and not necessarily conclusive, this will allow that the sets might be small enough to be graspable, while it still being true that the explanations they provide are complete.
+
+
